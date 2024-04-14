@@ -63,9 +63,13 @@ létezik tetszőleges valós $\lambda$-ra. A matematika nyelvét használva ezt 
 
 Az (\ref{eq:distributionfunction})-ben definiált $F$ függvényt az $x$ valószínűségi változó \textit{eloszlásfüggvényének} hívjuk. Ez a függvény monoton, nem csökkenő és jobbról folytonos és igazak rá a következők:
 \begin{equation}
-	\lim_{\lambda \to -\infty} F(\lambda) = 0, \quad \lim_{\lambda \to \infty} F(\lambda) = 1
+	\lim_{\lambda \to -\infty} F(\lambda) = 0, \quad \lim_{\lambda \to \infty} F(\lambda) = 1 .
 \end{equation}
-
+Bármely olyan függvényt, ami eleget tesz ezen feltételeknek eloszlásfüggvényének fogunk hívni. Az eloszlásfüggvény eloszlást definiál és ez $A$ halmazok valószínűségi mértéke lesz:
+\begin{equation}
+ \int_{A} dF(\lambda) .
+\end{equation}
+Ez egy hagyományos Lebesgue-Stieltjes mérték, amit $F$ definiál.
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  14 APR 2024 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  14 APR 2024 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -142,12 +142,25 @@ Segi v^^Saltoz^^So \OT1/cmr/m/it/10 eloszl^^Sasf^^?uggv^^Seny^^Senek
  []
 
 
-Overfull \hbox (22.4846pt too wide) in paragraph at lines 67--67
+Overfull \hbox (1.11177pt too wide) in paragraph at lines 67--69
+\OT1/cmr/m/n/10 B^^Sarmely olyan f^^?uggv^^Senyt, ami eleget tesz ezen felt^^Se
+teleknek eloszl^^Sasf^^?uggv^^Seny^^Senek
+ []
+
+
+Overfull \hbox (6.40808pt too wide) in paragraph at lines 67--69
+\OT1/cmr/m/n/10 fo-gunk h^^S^^Pvni. Az eloszl^^Sasf^^?uggv^^Seny eloszl^^Sast d
+efini^^Sal ^^Ses ez $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 hal-ma-zok val^^Sosz^^
+S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (22.4846pt too wide) in paragraph at lines 75--75
 []\OT1/cmr/bx/n/14.4 Folyamatok K^^?olcs^^?on^^?osen F^^?uggetlen Val^^Sosz^^S^
 ^Pn}us^^Segi
  []
 
-[6] (./veletlenfolyamatok.aux)
+[6] [7] (./veletlenfolyamatok.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -170,11 +183,12 @@ t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb>
-Output written on veletlenfolyamatok.pdf (6 pages, 142214 bytes).
+sy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b>
+Output written on veletlenfolyamatok.pdf (7 pages, 151119 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
