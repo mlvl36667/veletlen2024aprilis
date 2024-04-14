@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  14 APR 2024 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  14 APR 2024 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -134,22 +134,29 @@ Overfull \hbox (25.11203pt too wide) in paragraph at lines 52--54
 odos^^S^^Ptjuk intu^^S^^Pci^^Sonkat vagy megv^^Saltoztatjuk
  []
 
+[5]
+Overfull \hbox (11.46791pt too wide) in paragraph at lines 64--65
+[]\OT1/cmr/m/n/10 Az (3[])-ben defini^^Salt $\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/1
+0 f^^?uggv^^Senyt az $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 val^^Sosz^^S^^Pn}us^^
+Segi v^^Saltoz^^So \OT1/cmr/m/it/10 eloszl^^Sasf^^?uggv^^Seny^^Senek
+ []
 
-Overfull \hbox (22.4846pt too wide) in paragraph at lines 64--64
+
+Overfull \hbox (22.4846pt too wide) in paragraph at lines 67--67
 []\OT1/cmr/bx/n/14.4 Folyamatok K^^?olcs^^?on^^?osen F^^?uggetlen Val^^Sosz^^S^
 ^Pn}us^^Segi
  []
 
-[5] [6] (./veletlenfolyamatok.aux)
+[6] (./veletlenfolyamatok.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 418 strings out of 481239
- 7108 string characters out of 5920377
+ 419 strings out of 481239
+ 7133 string characters out of 5920377
  249564 words of memory out of 5000000
- 15754 multiletter control sequences out of 15000+600000
+ 15755 multiletter control sequences out of 15000+600000
  537558 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  25i,7n,19p,4686b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -164,7 +171,7 @@ public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb>
-Output written on veletlenfolyamatok.pdf (6 pages, 140496 bytes).
+Output written on veletlenfolyamatok.pdf (6 pages, 142214 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
