@@ -61,7 +61,11 @@ F(\lambda) = \mathbf{P}\{x(\omega) \leq \lambda\}
 \end{equation}
 létezik tetszőleges valós $\lambda$-ra. A matematika nyelvét használva ezt úgy is mondhatjuk, hogy egy (valós) valószínűségi változó tulajdonképp nem más, mint egy (valós) mérhető függvény. Egy komplex valószínűségi változó pedig egy $\omega$ függvény, aminek a valós és a képzetes részei mérhetők. Mostantól, ha mást nem állítunk, mindig fel fogjuk tenni, hogy ha esetleg több valószínűségi változóról lenne szó, akkor a valószínűségi változókat mindig ugyanazon $\omega$ téren fogjuk értelmezni. A matematikusok egy része már a mértékelmélet megjelenése előtt is foglalkozott valószínűségi változókkal, viszont akkor még nem volt tudatosítva hogy tulajdonképp mérhető függvények tulajdonságait vizsgálják. Az akkori tisztán valószínűség számítási nyelvezetet át lehet fordítani a mai mértékelméleti nyelvezetre. Ezek mellett meg fogjuk tartani a klasszikus valószínűség számítási terminusokat is, hiszen az alkalmazások során ez segítség lehet. Az analízisben gyakran praktikus lehet ugyanazt az a jelölést használni a függvényre, valamint a felvett értékére az értelmezési tartományában és ez a kétértelműség gyakran ki is fizetődik. Sok esetben azonban ennél pontosabban kell eljárnunk. A függvényeket általában egy betűvel fogjuk jelölni és más jelölést fogunk alkalmazni a függévény értékére az adott pontban. Így tehát az $x(\omega)$ alatt az $x$ függvény értékét értjük az $\omega$ pontban. Gyakran, amikor célszerű, akkor az $x$ függvényt az $x(\cdot)$ jellel jelöljük majd. 
 
-Az (\ref{eq:distributionfunction})-ben definiált $F$ függvényt az $x$ valószínűségi változó \textit{eloszlásfüggvényének} hívjuk.
+Az (\ref{eq:distributionfunction})-ben definiált $F$ függvényt az $x$ valószínűségi változó \textit{eloszlásfüggvényének} hívjuk. Ez a függvény monoton, nem csökkenő és jobbról folytonos és igazak rá a következők:
+\begin{equation}
+	\lim_{\lambda \to -\infty} F(\lambda) = 0, \quad \lim_{\lambda \to \infty} F(\lambda) = 1
+\end{equation}
+
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
