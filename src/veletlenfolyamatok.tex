@@ -69,7 +69,29 @@ Bármely olyan függvényt, ami eleget tesz ezen feltételeknek eloszlásfüggv�
 \begin{equation}
  \int_{A} dF(\lambda) .
 \end{equation}
-Ez egy hagyományos Lebesgue-Stieltjes mérték, amit $F$ definiál.
+Ez egy hagyományos Lebesgue-Stieltjes mérték, amit $F$ definiál. Ha pedig $F$ eloszlásfüggvény és valamilyen Lebesgue mérhető függvényre teljesül a következő:
+\begin{equation}
+	F(\lambda) = \int^{\infty}_{-\infty} f(\mu) d\mu, -\infty < \lambda < \infty,
+	\label{eq:density}
+\end{equation}
+akkor $f$-et az $F$-hez tartozó sűrűségfüggvénynek hívjuk. Majdnem minden $\lambda$-ra a Lebesgue mértékben teljesül az is, hogy $F'(\lambda) = f(\lambda)$. Amikor tehát azt mondjuk, hogy $F$-hez tartozik sűrűségfüggvény, akkor ez alatt azt értjük, hogy létezik egy $f$ függvény, ami kielégíti (\ref{eq:density})-t. Az $f$ függvény tehát akkor létezik, ha $F$ abszolút folytonos. 
+
+\textit{Többváltozós eloszlásfüggvénynek} hívjuk a következő $x_i,\ldots,x_n$ valószínűségi változókra értelmezett függvényt:
+\begin{equation}
+	F(\lambda_1,\ldots,\lambda_n)=\mathbf{P}\{x_j(\omega) \leq \lambda_j, j = 1,\ldots,n\}.
+	\label{eq:density2}
+\end{equation}
+A (\ref{eq:density2}) által definiált függvény minden változójában monoton, nem csökkenő és jobbról folytonos. Igazak rá továbbá a következők is:
+\[
+\lim_{\lambda_j \to -\infty} F(\lambda_1,\ldots,\lambda_n) = 0, \quad j = 1,\ldots,n
+\]
+\[
+\lim_{\lambda_1,\ldots,\lambda_n \to \infty} F(\lambda_1,\ldots,\lambda_n) = 1.
+\]
+Továbbá $\lambda_j \leq \mu_j, j = 1,\ldots,n$-re teljesül az is, hogy:
+\[
+	F(\mu_1,\ldots,\mu_n) - \sum^{n}_{j=1} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{n})+\sum^{n}_{\substack{j,k=1 \\ j < k}} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{k-1},\lambda_k,\mu_{k+1},\ldots,\mu_{n})-\ldots+(-1)^{n} \cdots F(\lambda_1,\ldots,\lambda_n) \geq 0.
+\]
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
