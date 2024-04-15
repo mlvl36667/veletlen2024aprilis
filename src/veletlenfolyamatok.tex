@@ -1,5 +1,5 @@
 \documentclass{article}
-
+\usepackage{amsmath}
 \begin{document}
 
 \title{Véletlen folyamatok}
@@ -89,9 +89,29 @@ A (\ref{eq:density2}) által definiált függvény minden változójában monoto
 \lim_{\lambda_1,\ldots,\lambda_n \to \infty} F(\lambda_1,\ldots,\lambda_n) = 1.
 \]
 Továbbá $\lambda_j \leq \mu_j, j = 1,\ldots,n$-re teljesül az is, hogy:
+\begin{align*}
+    &F(\mu_1,\ldots,\mu_n) - \sum^{n}_{j=1} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{n}) \\
+    &+ \sum^{n}_{\substack{j,k=1 \\ j < k}} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{k-1},\lambda_k,\mu_{k+1},\ldots,\mu_{n}) \\
+    &- \ldots + (-1)^{n} F(\lambda_1,\ldots,\lambda_n) \geq 0.
+\end{align*}
+Az egyenlet bal oldalán lévő mennyiség a következő valószínűséget fejezi ki $F$ segítségével:
 \[
-	F(\mu_1,\ldots,\mu_n) - \sum^{n}_{j=1} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{n})+\sum^{n}_{\substack{j,k=1 \\ j < k}} F(\mu_1,\ldots,\mu_{j-1},\lambda_j,\mu_{j+1},\ldots,\mu_{k-1},\lambda_k,\mu_{k+1},\ldots,\mu_{n})-\ldots+(-1)^{n} \cdots F(\lambda_1,\ldots,\lambda_n) \geq 0.
+ \mathbf{P}\{\mu_{j} \leq x_j(\omega) \leq \lambda_j, j = 1,\ldots,n\}.
 \]
+Minden olyan $F$ függévnyt, ami eleget tesz ezen feltételeknek $n$-változós eloszlásfüggvénynek fogunk hívni. Egy ilyen függvény $n$ dimenzióban Lebesgue-Stieltjes mértéket definiál:
+\[
+	\int\limits_{\substack{A}} \ldots \int\limits_{\substack{A}} d_{\lambda_1,\ldots,\lambda_n} F(\lambda_1,\ldots,\lambda_n).
+\]
+Egy Lebesgue mérhető és integrálható $f$ függvényt pedig hasonló módon sűrűségfüggvénynek hívunk (minden $\lambda_1,\ldots,\lambda_n$-re) ha igaz rá a következő:
+\begin{equation}
+	F(\lambda_1,\ldots,\lambda_n) = \int^{\lambda_1}_{-\infty} \ldots \int^{\lambda_n}_{-\infty} f(\mu_1,\ldots,\mu_{n})d\mu_1,\ldots,d\mu_{n}
+\end{equation}
+Ha minden lineáris Borel halmazra ($X_1,\ldots,X_n$) teljesül, hogy:
+\begin{equation}
+	\mathbf{P}\{x_j(\omega) \in X_j, j = 1,\ldots,n \} = \prod_{j=1}^{n} \mathbf{P}\{x_j(\omega) \in X_j\},
+	\label{eq:kfvv}
+\end{equation}
+akkor az $x_1,\ldots,x_n$ valószínűségi változókat \textit{kölcsönösen függetlennek} nevezzük. Ezt a feltételt meg lehet adni nyílt $X_j$ halmazokra is, intervallumokra is és akár olyan félig végtelen intervallumokra, mint például ($-\infty,b_j$]. A definíciókból következik, hogy csak azok a valószínűségi változók függetlenek, amelyek közös többváltozós eloszlása az egyes eloszlásfüggvények szorzataként áll elő. 
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
