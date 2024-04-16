@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{enumitem}
 \begin{document}
 
 \title{Véletlen folyamatok}
@@ -112,6 +113,59 @@ Ha minden lineáris Borel halmazra ($X_1,\ldots,X_n$) teljesül, hogy:
 	\label{eq:kfvv}
 \end{equation}
 akkor az $x_1,\ldots,x_n$ valószínűségi változókat \textit{kölcsönösen függetlennek} nevezzük. Ezt a feltételt meg lehet adni nyílt $X_j$ halmazokra is, intervallumokra is és akár olyan félig végtelen intervallumokra, mint például ($-\infty,b_j$]. A definíciókból következik, hogy csak azok a valószínűségi változók függetlenek, amelyek közös többváltozós eloszlása az egyes eloszlásfüggvények szorzataként áll elő. 
+
+Ez előző bekezdésben egy valószínűségi változó helyett $x_j$-vel akár jelölhetünk $m_j$ darab valószínűségi változót ($x_{j1},\ldots,x_{jm_j}$) és ekkor ha $X_j$ ennek megfelelően egy $m_j$ dimenziós halmaz, akkor az előzőekben tárgyalt elmélet segítségével kölcsönös függetlenséget tudunk definiálni véges számú valószínűségi változó aggregátumra, amikben véges számú valószínűségi változó van. Ha valamelyik aggregátumban mégis végtelen sok valószínűségi változó lenne, akkor a kölcsönös függetlenség alatt azt fogjuk érteni, hogy ha a végtelen aggregátumokat kicserélnénk véges aggregátumokra, akkor azok kölcsönösen függetlenek lennének. Valószínűségi változók végtelen sok aggregátuma kölcsönösen független ha $A_1,A_2,\ldots$ véges darabszámú aggregátum kölcsönösen függetlenül kiválasztható ezek közül. 
+
+Az itt megjelent definíciók komplex valószínűségi változókra is igazak ha (\ref{eq:kfvv})-ben megengedjük, hogy $X_j$ a két dimenziós komplex sík Borel halmaza legyen és ez a definíció később majd hasznosnak is fog bizonyulni. Az előzőeket komplex valószínűségi változókra természetesen úgy is lehet érteni, miszerint azok valós valószínűségi változók párok, egy valós és egy képzetes résszel. 
+
+Most vegyünk egy $x$ valószínűségi változót, és integráljuk azon az $\omega$ téren, amit $\Omega$-val jelöltünk. Ha ez az integrál létezik, akkor ezt $\mathrm{\textbf{E}}\{x\}$-nek fogjuk jelölni (bizonyos esetekben $\mathrm{\textbf{E}}\{x(\omega)\}$-nek) és ezt az $x$ valószínűségi változó \textit{várható értékének} hívjuk majd.
+\begin{equation}
+ \mathrm{\textbf{E}}\{x\} = \int_{\Omega} x d \mathrm{\textbf{P}}.
+\end{equation}
+Tudjuk, hogy ez az integrál csak akkor létezik, ha $|x|$ integrálja véges. 
+
+\subsection{A konvergenciáról}
+
+Vegyünk $x,x_1,x_2,\ldots$ valószínűségi változókat. Ekkor ha teljesül az, hogy majdnem minden $\omega$-ra: 
+\begin{equation}
+ \lim_{n \to \infty} x_{n}(\omega) = x(\omega),
+\end{equation}
+akkor azt mondjuk, hogy:
+\begin{equation}
+ \lim_{n \to \infty} x_{n} = x.
+\end{equation}
+$1$ valószínűséggel teljesül. Ilyen jellegű konvergenciáról csak akkor beszélhetünk, ha  
+\begin{equation}
+	\lim_{n \to \infty} \mathrm{\textbf{P}}\{\underset{m \geq n}{\mathrm{L.F.K.}} |x_{m}(\omega) - x_{n}(\omega) | \geq \epsilon \} = 0,
+\end{equation}
+és ennek minden pozitív $\epsilon$-ra teljesülni kell. Itt a legkisebb felső korlátra bevezettük az L.F.K. rövidítést. A \textit{sztochasztikus konvergenica} egy ennél gyengébb feltétel:
+\begin{equation}
+	\lim_{n \to \infty} \mathrm{\textbf{P}}\{|x_{n}(\omega) - x(\omega) | \geq \epsilon \} = 0.
+\end{equation}
+Ennek minden pozitív $\epsilon$-ra teljesülni kell. A sztochasztikus konvergenicát így jelöljük: 
+\begin{equation}
+	\underset{n \to \infty}{\operatorname{plim}} x_{n} = x.
+\end{equation}
+Erre gyakran \textit{valószínűségben vett konvergenica}-ként és \textit{mértékben vett konvergenica}-ként hivatkoznak. Az $1$ valószínűséggel teljesülő konvergenica és a valószínűségben vett konvergenica kapcsolata jól ismert, itt most nem fogjuk bebebizonyítani a következőeket:
+\begin{enumerate}[label=(\alph*)]
+ \item az $1$ valószínűséggel teljesülő konvergenica magával vonja a valószínűségben vett konvergenciát
+ \item $\underset{n \to \infty}{\operatorname{plim}} x_{n} = x$ csak akkor teljesül ha az $x_j$ sor minden $x_{a_n}$ részsora tartalmaz olyan részsort, amely $x$-hez $1$ valószínűséggel konvergál.
+\end{enumerate}
+Azt mondjuk továbbá, hogy egy $\{x_n\}$ sor $x$-hez \textit{középértékben} konvergál ha $\mathrm{\textbf{E}}\{|x_n|^2\} < \infty$ minden $n$-re és ha $\mathrm{\textbf{E}}\{|x|^2\} < \infty$ és ha
+\begin{equation}
+\lim_{n \to \infty} \mathrm{\textbf{E}}\{|x-x_n|^2\} = 0.
+\end{equation}
+Erre a következő jelölést használjuk:
+\begin{equation}
+\underset{n \to \infty}{\operatorname{l.i.m.}} x_{n} = x.
+	\label{eq:kek}
+\end{equation}
+A középértékben vett konvergencia magával vonja a valószínűségben vett konvergeniciát. Valójában ha (\ref{eq:kek}) teljesül, akkor minden $\epsilon > 0$-ra teljesülni fog, hogy 
+\begin{equation}
+	\lim_{n \to \infty} \mathrm{\textbf{P}}\{|x_{n}(\omega) - x(\omega) | \geq \epsilon \} \leq \lim_{n \to \infty} \frac{\mathrm{\textbf{E}}\{|x_n-x|^2\}}{\epsilon^2} = 0.
+\label{eq:kek2}
+\end{equation}
+Most vegyünk egy egydimenziós eloszlásfüggvény sort és ezt jelöljük $\{F_n\}$-el. A legcélszerűbb ha az eloszlásfüggvényhez való konvergenciát úgy definiáljuk, hogy $\lim_{n \to \infty} F_{n}(\lambda) = F(\lambda)$ teljesül $F$ minden folytonossági pontjában. Ha ez a feltétel teljesül, akkor akkor a konvergencia egyenletes lesz $F$ minden zárt folytonos intervallumán mindegy hogy az véges-e vagy végtelen. Hogyan tudunk most két eloszlásfüggvény --~$G_1$ és $G_2$~-- között olyan távolság-definíciót bevezetni, ami ilyen jellegű konvergenciát eredményez? 
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
