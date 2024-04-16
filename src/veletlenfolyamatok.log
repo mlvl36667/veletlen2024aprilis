@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  16 APR 2024 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  16 APR 2024 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -274,39 +274,63 @@ ssz^^?uk, hogy l^^Setezik a val^^Sosz^^S^^Pn}us^^Segi
  []
 
 
-Overfull \hbox (22.4846pt too wide) in paragraph at lines 180--180
+Overfull \hbox (5.47157pt too wide) in paragraph at lines 180--181
+[]\OT1/cmr/m/n/10 P^^Seld^^Saul, amikor majd ^^S^^Pgy kezd^^?unk egy t^^Setelt:
+ "vegy^^?unk $\OML/cmm/m/it/10 x[]; [] ; x[]$ \OT1/cmr/m/n/10 k^^?olcs^^?on^^?o
+sen
+ []
+
+[9]
+Overfull \hbox (3.64647pt too wide) in paragraph at lines 186--187
+\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]$ \OT1/cmr/m/n/10 t^^?obbv^^Saltoz^^Sos elosz
+l^^Sasa ($\OML/cmm/m/it/10 F[]$\OT1/cmr/m/n/10 ) meghat^^Sarozott. Az ^^S^^Pgy 
+meghat^^Sarozott
+ []
+
+
+Overfull \hbox (26.52853pt too wide) in paragraph at lines 193--195
+\OT1/cmr/m/n/10 Kolmogorov l^^Satta be, hogy csak ezeket a konzisz-ten-cia krit
+^^Seriumokat kell megk^^?ovetelni.
+ []
+
+[10]
+Overfull \hbox (22.4846pt too wide) in paragraph at lines 217--217
 []\OT1/cmr/bx/n/14.4 Folyamatok K^^?olcs^^?on^^?osen F^^?uggetlen Val^^Sosz^^S^
 ^Pn}us^^Segi
  []
 
-[9] [10] (./veletlenfolyamatok.aux) ) 
+[11] [12] (./veletlenfolyamatok.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1377 strings out of 481239
- 19755 string characters out of 5920377
+ 1379 strings out of 481239
+ 19774 string characters out of 5920377
  266638 words of memory out of 5000000
- 16689 multiletter control sequences out of 15000+600000
+ 16691 multiletter control sequences out of 15000+600000
  539021 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,13n,25p,4686b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super
-/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on veletlenfolyamatok.pdf (10 pages, 185515 bytes).
+ 30i,13n,25p,4685b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1000.pfb>
+Output written on veletlenfolyamatok.pdf (12 pages, 194570 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
