@@ -165,11 +165,20 @@ A középértékben vett konvergencia magával vonja a valószínűségben vett 
 	\lim_{n \to \infty} \mathrm{\textbf{P}}\{|x_{n}(\omega) - x(\omega) | \geq \epsilon \} \leq \lim_{n \to \infty} \frac{\mathrm{\textbf{E}}\{|x_n-x|^2\}}{\epsilon^2} = 0.
 \label{eq:kek2}
 \end{equation}
-Most vegyünk egy egydimenziós eloszlásfüggvény sort és ezt jelöljük $\{F_n\}$-el. A legcélszerűbb ha az eloszlásfüggvényhez való konvergenciát úgy definiáljuk, hogy $\lim_{n \to \infty} F_{n}(\lambda) = F(\lambda)$ teljesül $F$ minden folytonossági pontjában. Ha ez a feltétel teljesül, akkor akkor a konvergencia egyenletes lesz $F$ minden zárt folytonos intervallumán mindegy hogy az véges-e vagy végtelen. Hogyan tudunk most két eloszlásfüggvény --~$G_1$ és $G_2$~-- között olyan távolság-definíciót bevezetni, ami ilyen jellegű konvergenciát eredményez? 
+Most vegyünk egy egydimenziós eloszlásfüggvény sort és ezt jelöljük $\{F_n\}$-el. A legcélszerűbb ha az eloszlásfüggvényhez való konvergenciát úgy definiáljuk, hogy $\lim_{n \to \infty} F_{n}(\lambda) = F(\lambda)$ teljesül $F$ minden folytonossági pontjában. Ha ez a feltétel teljesül, akkor akkor a konvergencia egyenletes lesz $F$ minden zárt folytonos intervallumán mindegy hogy az véges-e vagy végtelen. Hogyan tudunk most két eloszlásfüggvény --~$G_1$ és $G_2$ között~-- olyan távolság-definíciót bevezetni, ami ilyen jellegű konvergenciát eredményez? Ehhez rajzoljuk fel $G_1$-et és $G_2$-t, majd a szakadási pontokba húzzunk be függőleges vonalakat és ekkor a két függvény között a távolságot definiáljuk úgy, hogy maximálisan mennyit kell megtenni a két függvény között egy $-1$ meredekségű egyenes mentén. A távolság ilyen definíciója mellett az eloszlásfüggvények tere teljes metrikus tér lesz és $\lim_{n \to \infty} F_{n}(\lambda) = F(\lambda)$ teljesül $F$ minden folytonossági pontjában, de csak akkor ha $F_n$ és $F$ között a távolság $0$-hoz tart $1/n$-el.
 
+Azt mondjuk továbbá, hogy az $x$ valószínűségi változó \textit{eloszlásban konvergál} ha az $\{F_n\}$ függvénysora az $\{x_n\}$ valószínűségi változóknak az előbb ismertetett módon konvergál egy eloszlásfüggvényhez. Ez a meghatározás valamelyest szerencsétlen, hiszen lesznek olyan esetek, amikor $\{x_n\}$ sehogy sem konvergál. Ha például az eloszlásfüggvények megegyeznek, de ettől függetlenül a valószínűségi változókat tetszőlegesen megválaszthatjuk (mondjuk kölcsönösen függetlenre választjuk őket) és így eloszlásban konvergáló valószínűségi változó sort kapunk.
+
+\subsection{A valószínűségi változók családjai}
+
+Vannak olyan esetek, amikor a valószínűségi változókat közvetlen módon adjuk meg. Ha mondjuk vesszük a számegyenest, mint az $\omega$ teret, és az $\omega$ halmazoknak a Lebesgue mérhető halmazokat választjuk meg és ha a valószínűségi mértéket így definiáljuk:
+\begin{equation}
+ \mathrm{\textbf{P}}\{ A \} = \frac{1}{\sqrt{2\pi}} \int_{A} e^{-\lambda^2/2}d\lambda,
+\end{equation}
+akkor az $1,\omega,\omega^2,\ldots$ függvénysor valószínűségi változók sora lesz. Sokszor azonban teljesen mindegy, hogy milyen $\omega$ téren dolgozunk és csak azt követeljük meg, hogy létezzen a valószínűségi változók egy olyan osztálya, ami kielégít bizonyos feltételeket. Ebben az esetben az történik, hogy véges aggregátumok többváltozós eloszlásai vannak megadva és feltesszük, hogy létezik a valószínűségi változók olyan családja, amire az adott eloszlás lesz igaz. Most ezt a gondolatot fogjuk kicsit részletesebben kifejteni. \ref{sec:veletlenfolyamatokdefinicioja}§2-ben lesz még szó arról hogyan kell más módokon megadni eloszlásfüggvényeket.
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
-\section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:veletlenfolyamatokdefinicioja}
+\section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
 \section{Diszkrét Paraméterű Markov Folyamatok}\label{sec:diszkretparameterumarkov}
 \section{Folytonos Paraméterű Markov Folyamatok}\label{sec:folytonosparameterumarkov}
 \section{Martingálok}\label{sec:martingalok}

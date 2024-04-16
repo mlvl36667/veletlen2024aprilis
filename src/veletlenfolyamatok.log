@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  16 APR 2024 09:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  16 APR 2024 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -96,11 +96,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count189
 \l__pdf_internal_box=\box48
 )
-(./veletlenfolyamatok.aux
-
-LaTeX Warning: Label `sec:veletlenfolyamatokdefinicioja' multiply defined.
-
-)
+(./veletlenfolyamatok.aux)
 \openout1 = `veletlenfolyamatok.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -272,41 +268,45 @@ ica mag^^Saval vonja a val^^Sosz^^S^^Pn}us^^Segben
  []
 
 [8]
-Overfull \hbox (22.4846pt too wide) in paragraph at lines 171--171
+Overfull \hbox (2.33401pt too wide) in paragraph at lines 177--179
+\OT1/cmr/m/n/10 t^^?obbv^^Saltoz^^Sos eloszl^^Sasai van-nak megadva ^^Ses felte
+ssz^^?uk, hogy l^^Setezik a val^^Sosz^^S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (22.4846pt too wide) in paragraph at lines 180--180
 []\OT1/cmr/bx/n/14.4 Folyamatok K^^?olcs^^?on^^?osen F^^?uggetlen Val^^Sosz^^S^
 ^Pn}us^^Segi
  []
 
-[9] (./veletlenfolyamatok.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[9] [10] (./veletlenfolyamatok.aux) ) 
 Here is how much of TeX's memory you used:
- 1373 strings out of 481239
- 19639 string characters out of 5920377
+ 1377 strings out of 481239
+ 19755 string characters out of 5920377
  266638 words of memory out of 5000000
- 16686 multiletter control sequences out of 15000+600000
- 538686 words of font info for 46 fonts, out of 8000000 for 9000
+ 16689 multiletter control sequences out of 15000+600000
+ 539021 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,13n,25p,4686b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on veletlenfolyamatok.pdf (9 pages, 180105 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super
+/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on veletlenfolyamatok.pdf (10 pages, 185515 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
