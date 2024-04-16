@@ -53,7 +53,7 @@ Még nem tettük fel, hogy az alap valószínűségi mérték teljes. Arról van
 \end{equation}
 és ettől függetlenül $\Lambda$ valószínűsége nem biztos, hogy értelmezett. Nyilván, ha $\mathbf{P}\{\Lambda\}$ értelmezett, akkor az $0$. Egy matematikus számára ez a tulajdonság zavaró lehet ha meg szeretné magának tartani a valószínűség intuitív értelmezését. Itt tehát két választás előtt állunk, vagy módosítjuk intuíciónkat vagy megváltoztatjuk a matematikát. A választás nem túl fontos, azonban ha nagyon ragaszkodunk az intuíciónkhoz, akkor könnyen átdefiniálhatjuk fogalmainkat. Valójában a valószínűségi mértéket könnyedén teljessé lehet tenni ha az $\omega$ halamazok osztályát némileg kibővítjük. Ettől függetlenül, most azonban mégis tegyük inkább fel, hogy a valószínűségi mérték, amivel ezentúl dolgozni fogunk teljes.
 
-\subsection{Valószínűségi Változók és Eloszlások}
+\subsection{Valószínűségi Változók és Eloszlások}\label{ss:vveelo}
 
 Egy valós $x$ függvényt egy $\omega$ ponttéren valós \textit{valószínűségi változónak} nevezünk ha az $\omega$ halmazokon létezik valószínűségi mérték és egy tetszőleges $\lambda$ valós számhoz az $x(\omega) \leq \lambda$ egyenlőtlenség bekorlátozza az $\omega$ halmazt és így is mérhető halmazt kapunk. Ebből következő módon: 
 \begin{equation}
@@ -176,6 +176,13 @@ Vannak olyan esetek, amikor a valószínűségi változókat közvetlen módon a
  \mathrm{\textbf{P}}\{ A \} = \frac{1}{\sqrt{2\pi}} \int_{A} e^{-\lambda^2/2}d\lambda,
 \end{equation}
 akkor az $1,\omega,\omega^2,\ldots$ függvénysor valószínűségi változók sora lesz. Sokszor azonban teljesen mindegy, hogy milyen $\omega$ téren dolgozunk és csak azt követeljük meg, hogy létezzen a valószínűségi változók egy olyan osztálya, ami kielégít bizonyos feltételeket. Ebben az esetben az történik, hogy véges aggregátumok többváltozós eloszlásai vannak megadva és feltesszük, hogy létezik a valószínűségi változók olyan családja, amire az adott eloszlás lesz igaz. Most ezt a gondolatot fogjuk kicsit részletesebben kifejteni. \ref{sec:veletlenfolyamatokdefinicioja}§2-ben lesz még szó arról hogyan kell más módokon megadni eloszlásfüggvényeket.
+
+Például, amikor majd így kezdünk egy tételt: "vegyünk $x_1,\ldots,x_n$ kölcsönösen független valószínűségi változókat, amelyek eloszlásfüggvényei $F_1,\ldots,F_n$" a tétel triviális lesz anélkül, hogy kimondanánk egy tételt az $n$ valószínűségi változóról valamilyen téren. Nézzünk most konkrétan egy ilyen létezésről szóló tételt. Ez remélhetőleg tisztává fogja varázsolni a képet. Vegyük az $\omega$ teret, amiben $n$ dimenzióban $\xi_1,\ldots,\xi_n$ pontok vannak. A Borel halmazokon az $\omega$ téren a következő módon lehet valószínűségi mértéket definiálni: 
+\begin{equation}
+	\mathrm{\textbf{P}}\{ A \} = \int\limits_{\substack{A}} \ldots \int\limits_{\substack{A}}  dF_1(\xi_1) \ldots dF_n(\xi_n),
+\end{equation}
+ahogyan erről már §\ref{ss:vveelo} volt szó. Most pedig jelöljük $x_j$-vel a $j$. koordináta változót, avagy $x_j(\omega)=\xi_j$ ha $\omega$ a ($\xi_1,\ldots,\xi_n$) pont.
+
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
