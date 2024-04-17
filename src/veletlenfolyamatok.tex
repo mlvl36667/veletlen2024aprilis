@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{mathrsfs}   % for script capitals
 \begin{document}
 
 \title{Véletlen folyamatok}
@@ -27,7 +28,7 @@ A jelen kéziratban bonyolult matematikai módszerek tárházát használjuk, et
 
 Amikor magasabb szintű valószínűség számítással foglalkozó könyvet szeretnénk megírni --~mivel a valószínűség számítás a mértékelmélet egy ága~-- két választás előtt áll a szerző. Vagy hagy egy fejezetet a mértékelméletnek, vagy feltételezi, hogy az olvasó a rendelkezésre álló egyéb mértékelméleti szakkönyvekből (előadásokból) már elsajátította a szükséges előismereteket. Praktikussági okokra hivatkozván a második opciót választom, és azt tartom szem előtt, hogy itt egy olyan kézirat készül, amit a mértékelmélet alapos ismerete nélkül is lehet abszolválni. A valószínűség számítás alapvető összefüggéseit, az abban használt módszereket azonban ismertnek feltételezem.
 
-\subsection{Milyen Térben Dolgozunk?}
+\subsection{Milyen Térben Dolgozunk?}\label{lab:ter}
 
 Amióta a matematikusok a valószínűség számításra egzakt tudományra tekintenek az olyan fogalmakra mint például a \textit{megjelenés}, \textit{esemény}, \textit{urna}, \textit{kocka} és hasonló nincs többé szükség, amikor valószínűség számításról beszélünk. Ettől függetlenül, ha továbbra is használjuk ezeket, akkor az intuíció a segítségünkre lesz az elkövetkezendő diszkussziók során és analitikus módszereket dolgozhatunk majd ki, valamint új kutatási irányok nyílhatnak meg. Főként emiatt a mai napig gyakran a szóhasználat megmarad még akkor is ha tisztán elméleti valószínűség számításról beszélnek a matematikusok is.
 
@@ -213,10 +214,46 @@ Az alap $\omega$ tér ($\Omega$) most $\Omega_T$ volt az előzőekben, ami minde
 
 Vegyünk most egy $\{\xi_t, t \in T\}$ valószínűségi változó családot. Ebben az esetben rögzített $\omega$-ra az $x_t(\omega)$ függvényérték $t$ egy függvényét adja meg. Az így kapott $t$ függvényeket a család \textit{mintavételi} függvényének fogjuk hívni. Abban a konkrét esetben, amikor $\Omega$ koordináta tér ($\Omega_T$), és $x_t$ a $t$. koordináta függvény, az $\omega$ bázispont és a mintavételi függvény koncepciója egybeesik. Mindenesetre gyakran praktikus lesz olyan kifejezéseket használni, mint mondjuk "majdnem minden mintavételi függvény" és emögött mindig azt a mértékelméleti koncepciót fogjuk érteni ami visszautal az $\Omega$ térre. Például a \textit{majdnem minden mintavételi függvény} kifejezés egyenértékű azzal, hogy "majdnem minden $\omega$". Ha a $T$ paraméterhalmaz véges vagy megszámlálhatóan végtelen, akkor helyesebb \textit{mintavételi sorról} beszélni, mint mintavételi függvényekről és általában így is fogunk eljárni.
 
-Végül még említsük meg azt is, hogy amikor eloszlásfüggvények osztályáról beszélünk (mint ahogyan a bevezetésben ezt meg is tettük), akkor és ennek segítségével $\Omega_T$ halmazokhoz mértéket definiálunk, gyakran célszerűbb nem az összes $t$ ($t \in T$) függvényosztályt venni, hanem jobban járhatunk ha kikötjük, hogy a $t$ paraméterek csak valamilyen $X$ halmazból kerülhetnek ki. Nincs azonban feltétlenül szükség arra, hogy ezt az $X$ halmazt $t$-től függően állapítsuk meg. Minden eddig fentebb elmondot teljesül akkor is ha $X$ a végtelen számegyenes ($-\infty \leq x \leq \infty$) és a megfelelően megválasztott eloszlások $1$ valószínűséggel korlátozzák a valószínűségi változókat $X$-re.
+Végül még említsük meg azt is, hogy amikor eloszlásfüggvények osztályáról beszélünk (mint ahogyan a bevezetésben ezt meg is tettük), akkor és ennek segítségével $\Omega_T$ halmazokhoz mértéket definiálunk, gyakran célszerűbb nem az összes $t$ ($t \in T$) függvényosztályt venni, hanem jobban járhatunk ha kikötjük, hogy a $t$ paraméterek csak valamilyen $X$ halmazból kerülhetnek ki. Nincs azonban feltétlenül szükség arra, hogy ezt az $X$ halmazt $t$-től függően állapítsuk meg. Minden eddig fentebb elmondot teljesül akkor is ha $X$ a végtelen számegyenes ($-\infty \leq x \leq \infty$) Borel halmaz és a megfelelően megválasztott eloszlások $1$ valószínűséggel korlátozzák a valószínűségi változókat $X$-re.
 
+Nézzük most azt az esetet, amikor többször egymás után dobunk egy dobókockával. Ezen példa segítségével próbálom illusztrálni a fentieket. Tegyük fel, hogy $n$-szer dobjuk el a kockát. A $T$ paraméterhalmaznak akkor választhatjuk az $1,\ldots,n$ egészek halmazát. Az $\Omega_T$ terünk ekkor egy $n$ dimenziós tér, és ebben ($\xi_1,\ldots,\xi_n$) pontok vannak. Bármely ponthoz, amely koordinátái egészek az $(1/6)^n$ mértéket tudjuk hozzárendelni. Ha pedig ilyen pontokból halmazokat készítünk, akkor minden ilyen halmaz mértéke a halmazban található pontok száma osztva $6^n$-el lesz. Ezen módszer segítségével egy szabályos dobókocka $n$-szer való eldobásának matematikai modelljét kaptuk (lásd még §\ref{lab:ter}). Az $\Omega_T$ tér egy $j$ pontja pedig egy valószínűségi változó, ami a $j$. dobásban kapott értéket veszi fel. Nyilván így az $\Omega_T$ térben feleslegesen sok pontunk lesz. A ($0,\ldots,0$) pont például fizikailag értelmezhetetlen és feleslegesen elbonyolítja a matematikai modellt. Pontosan ezen okból vezettük be az $X$ halmazt az előző bekezdésben. Válasszuk most az $X$ halmaznak az $1,2,3,4,5,6$ egészeket, és így az $\omega$ tér $6^n$ pontból álló tér lesz $n$ dimenzióban, a pontok koordinátái pedig az $1,2,3,4,5,6$ egész értékeket vehetik majd fel. Ha pedig a pontokból halmazokat készítünk, akkor minden ilyen halmaz mértéke a halmazban található pontok száma osztva $6^n$-el lesz.
 
+\subsection{Szorzattér reprezentációk}
 
+Vegyünk most egy $x$ valószínűségi változót, az eloszlásfüggvényét pedig jelöljük $F$-el. Ha így teszünk, akkor $F$-ből Lebesgue-Stieltjes mértéket kapunk lináris halmazokra: 
+\[
+	\tilde{\mathrm{\textbf{P}}}\{ A \} = \int_{A} dF(\xi).
+\]
+A mérhető lineáris halmazok azok lesznek, amik mérhetőek ezen $F$ mérték szerint. Ezen halmazokba beleértjük az összes Borel halmazt. Ha pedig valószínűségi mértékkel van dolgunk a számegyenesen és egy $x$-re adott feltételből következő eseményt vizsgálunk, akkor tekinthetj-k azt mondjuk, hogy $x(\omega) \in A$ és itt $A$ lineáris ponthalmaz és nem $\omega$ halmaz ($x(\omega) \in A$). Az előbb definiált lineáris mérték pedig biztosítja, hogy a valószínűség mind a két interpretációban meg fog egyezni. Formálisan azt mondhatjuk, hogy szükségünk van egy mértéktartó transzformációra, ami az $\omega$ tér és a számegyenes között működik. Ezt túlságosan részletes magyarázatok nélkül is megérthetjük. Ehhez vegyünk egy $\tilde{x}$ koordináta (valószínűségi) változót a számegyenesen. Ez egy függvény, ami $\xi$ értéket vesz fel a $\xi$ koordinátájú pontban. Most tegyük fel, hogy csak olyan eseteket vizsgálunk, amikor az $\omega$ valószínűségi változók csak $\Phi(x)$ alakot öltenek, ahol $\Phi$ egy valós Baire függvény. Még általánosabban azt is mondhatnánk, hogy mérhető az $F$ mérték szerint. Ebben az esetben gyakran praktikus ha az eredeti $\omega$ tér helyett a számegyenest használjuk és ehhez alkalmazzuk még az $F$ mértéket, ahogyan azt fentebb definiáltuk. Például ha van egy $\omega$ valószínűségi változónk $\Phi(x)$, akkor abból csinálhatunk egy $\Phi(\tilde{x})$ valószínűségi változót és ez már a számegyenesen lesz definiálva. $\tilde{x}$ és $x$ ugyan különböző tereken definiált valószínűségi változó, eloszlásuk azonban megegyezik. Még általánosabban azt is mondhatjuk, hogy ha $\Phi_1(x),\ldots,\Phi_n(x)$ ilyen jellegű $\omega$ valószínűségi változók, akkor lehet őket a számegyenesen értelmezni és a többváltozós eloszlásuk meg fog egyezni, attól függetlenül, hogy különböző tereken vannak definiálva. Az alkalmazhatósági szempontokat figyelembe véve, nézzük most például $\Phi(x)$ várható értékét ha $\Phi(x)$ olyan tulajdonságú, mint amiről eddig szó volt. Ha az $\omega$ téren dolgozunk, akkor $\mathrm{\textbf{E}}\{\Phi(x)\}$:
+\[
+	\int_{\Omega} \Phi\left[x(\omega)\right] d \mathrm{\textbf{P}}.
+\]
+Ha pedig most az új bázisteret használjuk ($\tilde{\Omega}$), ami a $\xi$ tengely, akkor a $\Phi(\tilde{x})$ valószínűségi változóval van dolgunk, ennek várható értéke pedig így számolható:
+\[
+	\int_{-\infty}^{\infty} \Phi(\xi) dF(\xi).
+\]
+A két mennyiség egyenlő (belátható) és ezáltal, amikor várható értéket szeretnénk számolni, akkor nincs feltétlenül szükség arra, hogy visszaközlekedjünk az eredeti bázistérbe.
+
+Most vegyünk két valószínűségi változót, $x$-et és $y$-t. Közös kétváltozós eloszlásukat jelöljük $F$-el. Most is, hasonlóan az egydimenziós esethez, $F$ a síkon vett halmazokhoz valószínűségi mértéket fog definiálni:
+\[
+	\mathrm{\textbf{P}}\{ A \} = \iint\limits_{A} d_{\xi,\eta} F(\xi,\eta),
+\]
+ha $A$ mérhető $F$ szerint. Tegyük fel továbbá, hogy minket csak olyan mennyiségek érdekelnek, amik kifejezhetőek $\Phi(x,y)$ alakban. Itt $\Phi$ két valós változó függvénye és $F$ szerint mérhető. Ebben az esetben hasonló módon járhatunk el, mint az egydimenziós esetben és az eredeti $\Omega$ tér helyett vehetünk egy $\tilde{\Omega}$ teret, amit a $\xi,\eta$ síkkal azonosítunk. Itt az a fontos, hogy az eredeti $\omega$ téren értelmezett mérték egy pont mértéktartó transzformáció segítségével az $\tilde{\Omega}$ téren is mértéket indukál. Ez az új tér gyakran jobban kezelhető mint az eredeti. Nagyon hasonlóan az előzőekhez, $\mathrm{\textbf{E}}\{\Phi(x,y)\}$, amit az $\omega$ téren $\omega$ mérték mellett értelmezünk:
+\[
+	\int_{\Omega} \Phi\left[x(\omega),y(\omega)\right] d \mathrm{\textbf{P}}.
+\]
+Ez pedig az új téren az új mérték mellett így értékelhető ki:
+\[
+	\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \Phi(\xi,\eta) d_{\xi,\eta} F(\xi,\eta).
+\]
+A két megközelítés ugyanazon várható értéket adja.
+
+Általánosságban vehetünk egy tetszőleges valószínűségi változó családot ($x_t, t \in T$). Az $\omega$ halmazok legkisebb olyan Borel mezejét, ami szerint az $x_t$-k még mérhetők jelöljük $\mathscr{B}(x_t, t \in T)$-vel. Ezt a halmazokból álló Borel mezőt $\omega$ halmazok osztálya generálja, amik $\{x_t(\omega) \in X\}$ alakúak. Itt $t \in T$, $X$ pedig egy intervallum. Ebben az esetben gyakran célszerű az eredeti $\Omega$ tér helyett egy $\tilde{\Omega} = \Omega_T$ térben dolgozni. Ez a tér a $t$ ($t \in T$) függvények tere. Belátható az, hogy ha valószínűségi mértéket tudunk definiálni ezen a függvénytéren olyan módon, hogy $\{\tilde{x}_t(\omega) \in X\}$ a koordináta változók osztálya, akkor minden véges $\tilde{x}_t$-ből képzett halmaz ugyanazon többváltozós eloszlással fog rendelkezni, mint a nekik megfelelő $x_t$ változók. Kiderül, hogy lesz egy egyértelmű transzformáció, ami a $\mathscr{B}(x_t, t \in T)$ szerint mérhető $\omega$ valószínűségi változókat $\tilde{\omega}$ valószínűségi változókba viszi. Itt megegyező valószínűségi változók alatt azokat értjük, amik $1$ valószínűséggel megegyeznek. A transzformáció kielégíti a következő feltételeket:
+\begin{enumerate}[label=(\roman*)]
+	\item a transzformáció $x_t$-t $\tilde{x}_t$-be viszi, véges számú $x_t$-k Baire függvényei ugyanazon Baire függvényekbe mennek át, $\tilde{x}_t$-kre értelmezve,
+	\item ha $x$ egy $\omega$ valószínűségi változó és az egy $\tilde{\omega}$ $\tilde{x}$ valószínűségi változóba megy át és ha valamelyik valószínűségi változó várható értéke létezik, akkor létezik a másiké is és ezek a mennyiségek megegyeznek,
+	\item ha $x$ egy $\omega$ valószínűségi változó és az egy $\Lambda$ halmazon ($\Lambda \in \mathscr{B}(x_t, t \in T)$) $1$-et, annak komplemensén $0$-t vesz fel, akkor a transzformáció azt egy $\tilde{\omega}$ $\tilde{x}$ valószínűségi változóba viszi át és $\tilde{x}$ egy $\tilde{\Lambda}$ halmazon $1$-et, annak komplemensén $0$-t vesz fel és az így definiált halmaztranszformáció $1$--$1$ megfeleltetés (azonos halmazok alatt a $0$ mértékkel eltérő halmazokat értjük), valamint mértéktartó. 
+\end{enumerate}
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
