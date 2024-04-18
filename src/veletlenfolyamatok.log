@@ -1,0 +1,403 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.2.15)  18 APR 2024 08:42
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**veletlenfolyamatok.tex --output-directory=../
+(./veletlenfolyamatok.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen135
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count175
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count176
+\leftroot@=\count177
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count178
+\DOTSCASE@=\count179
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count180
+\c@MaxMatrixCols=\count181
+\dotsspace@=\muskip16
+\c@parentequation=\count182
+\dspbrk@lvl=\count183
+\tag@help=\toks15
+\row@=\count184
+\column@=\count185
+\maxfields@=\count186
+\andhelp@=\toks16
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks17
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks19
+\labelindent=\skip52
+\enit@outerparindent=\dimen144
+\enit@toks=\toks20
+\enit@inbox=\box47
+\enit@count@id=\count187
+\enitdp@description=\count188
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count189
+\l__pdf_internal_box=\box48
+)
+(./veletlenfolyamatok.aux)
+\openout1 = `veletlenfolyamatok.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Overfull \hbox (13.58409pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/n/10 V^^Seletlen (sz-tochasztikus) folya-mat-nak nevezz^^?uk azon em
+-pirikus folyam-a-tok matem-
+ []
+
+
+Overfull \hbox (2.35146pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/n/10 atikai ab-sz-trakci^^Soj^^Sat, amit val^^Sosz^^S^^Pn}us^^Segi t
+^^?orv^^Senyek vez^^Serelnek. A je-len k^^Seziratban
+ []
+
+
+Overfull \hbox (2.55621pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 f^^?uggetlen^^?ul azon-ban mindig a val^^Sosz^^S^^Pn}us^^Seg sz
+^^Sam^^S^^Pt^^Sas nyelv^^Senek seg^^S^^Pts^^Seg^^Sevel mond-
+ []
+
+
+Overfull \hbox (10.19507pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 felt^^Setelezi, hogy az olvas^^So a ren-delkez^^Sesre ^^Sall^^S
+o egy^^Seb m^^Sert^^Sekelm^^Seleti szakk^^?onyvekb}ol
+ []
+
+
+Overfull \hbox (4.76923pt too wide) in paragraph at lines 29--30
+\OT1/cmr/m/n/10 (el}oad^^Sasokb^^Sol) m^^Sar el-saj^^Sat^^S^^Ptotta a sz^^?uks^
+^Seges el}oismereteket. Prak-tikuss^^Sagi okokra
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (2.44505pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 lesz az elk^^?ovetkezend}o dis-zkusszi^^Sok sor^^San ^^Ses anal
+-i-tikus m^^Sodszereket dol-go-zhatunk
+ []
+
+
+Overfull \hbox (19.02849pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 napig gyakran a sz^^Sohaszn^^Salat meg-marad m^^Seg akkor is ha
+ tiszt^^San elm^^Seleti val^^Sosz^^S^^Pn}us^^Seg
+ []
+
+
+Overfull \hbox (46.40874pt too wide) in paragraph at lines 35--36
+[]\OT1/cmr/m/n/10 A val^^Sosz^^S^^Pn}us^^Seg sz^^Sam^^S^^Pt^^Sas al-ka-lmaz^^Sa
+sa sor^^San a \OT1/cmr/m/it/10 val^^Sosz^^S^^Pn}us^^Seget \OT1/cmr/m/n/10 esem^
+^Senyek bek^^?ovetkez^^Ses^^Sevel
+ []
+
+
+Overfull \hbox (25.58469pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/n/10 val^^Sosz^^S^^Pn}us^^Seget ren-delj^^?uk hozz^^Sa. Ezek tetsz}o
+leges oszt^^Saly^^Sahoz pedig az $[]$ val^^Sosz^^S^^Pn}us^^Seget
+ []
+
+
+Overfull \hbox (6.2217pt too wide) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/10 A val^^Sosz^^S^^Pn}us^^Seg sz^^Sam^^S^^Pt^^Sas elm^^Selete ne
+m m^^Sas mind a k^^?ul^^?onb^^?oz}o terek m^^Serhet}os^^Segi
+ []
+
+[2] [3] [4]
+Overfull \hbox (5.33394pt too wide) in paragraph at lines 54--56
+\OT1/cmr/m/n/10 zavar^^So lehet ha meg sz-eretn^^Se mag^^Sanak tar-tani a val^^
+Sosz^^S^^Pn}us^^Seg in-tuit^^S^^Pv ^^Sertelmez^^Ses^^Set.
+ []
+
+
+Overfull \hbox (25.11203pt too wide) in paragraph at lines 54--56
+\OT1/cmr/m/n/10 Itt teh^^Sat k^^Set v^^Salaszt^^Sas el}ott ^^Sallunk, vagy m^^S
+odos^^S^^Ptjuk intu^^S^^Pci^^Sonkat vagy megv^^Saltoztatjuk
+ []
+
+[5]
+Overfull \hbox (11.46791pt too wide) in paragraph at lines 66--67
+[]\OT1/cmr/m/n/10 Az (3[])-ben defini^^Salt $\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/1
+0 f^^?uggv^^Senyt az $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 val^^Sosz^^S^^Pn}us^^
+Segi v^^Saltoz^^So \OT1/cmr/m/it/10 eloszl^^Sasf^^?uggv^^Seny^^Senek
+ []
+
+
+Overfull \hbox (1.11177pt too wide) in paragraph at lines 69--71
+\OT1/cmr/m/n/10 B^^Sarmely olyan f^^?uggv^^Senyt, ami eleget tesz ezen felt^^Se
+teleknek eloszl^^Sasf^^?uggv^^Seny^^Senek
+ []
+
+
+Overfull \hbox (6.40808pt too wide) in paragraph at lines 69--71
+\OT1/cmr/m/n/10 fo-gunk h^^S^^Pvni. Az eloszl^^Sasf^^?uggv^^Seny eloszl^^Sast d
+efini^^Sal ^^Ses ez $\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 hal-ma-zok val^^Sosz^^
+S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (2.6951pt too wide) in paragraph at lines 73--75
+\OT1/cmr/m/n/10 eloszl^^Sasf^^?uggv^^Seny ^^Ses valam-i-lyen Lebesgue m^^Serhet
+}o f^^?uggv^^Senyre tel-jes^^?ul a k^^?ovetkez}o: 
+ []
+
+
+Overfull \hbox (49.82251pt too wide) in paragraph at lines 102--104
+\OT1/cmr/m/n/10 Minden olyan $\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/10 f^^?ugg^^Sevn
+yt, ami eleget tesz ezen felt^^Seteleknek $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 -
+v^^Saltoz^^Sos eloszl^^Sasf^^?uggv^^Senynek
+ []
+
+[6]
+Overfull \hbox (51.88974pt too wide) in paragraph at lines 106--108
+\OT1/cmr/m/n/10 Egy Lebesgue m^^Serhet}o ^^Ses in-tegr^^Salhat^^So $\OML/cmm/m/
+it/10 f$ \OT1/cmr/m/n/10 f^^?uggv^^Senyt pedig ha-sonl^^So m^^Sodon s}ur}us^^Se
+gf^^?uggv^^Senynek
+ []
+
+
+Overfull \hbox (1.92941pt too wide) in paragraph at lines 118--119
+[]\OT1/cmr/m/n/10 Ez el}oz}o bekezd^^Sesben egy val^^Sosz^^S^^Pn}us^^Segi v^^Sa
+ltoz^^So helyett $\OML/cmm/m/it/10 x[]$\OT1/cmr/m/n/10 -vel ak^^Sar jel^^?olhet
+^^?unk
+ []
+
+
+Overfull \hbox (1.77917pt too wide) in paragraph at lines 118--119
+\OML/cmm/m/it/10 m[]$ \OT1/cmr/m/n/10 darab val^^Sosz^^S^^Pn}us^^Segi v^^Saltoz
+^^Sot ($\OML/cmm/m/it/10 x[]; [] ; x[]$\OT1/cmr/m/n/10 ) ^^Ses ekkor ha $\OML/c
+mm/m/it/10 X[]$ \OT1/cmr/m/n/10 en-nek megfelel}oen
+ []
+
+
+Overfull \hbox (14.30632pt too wide) in paragraph at lines 118--119
+\OT1/cmr/m/n/10 f^^?uggetlens^^Seg alatt azt fogjuk ^^Serteni, hogy ha a v^^Seg
+telen ag-greg^^Satumokat kicser^^Seln^^Senk
+ []
+
+
+Overfull \hbox (11.88037pt too wide) in paragraph at lines 118--119
+\OT1/cmr/m/n/10 v^^Seges ag-greg^^Satumokra, akkor azok k^^?olcs^^?on^^?osen f^
+^?uggetlenek lenn^^Senek. Val^^Sosz^^S^^Pn}us^^Segi
+ []
+
+[7]
+Overfull \hbox (9.82819pt too wide) in paragraph at lines 141--143
+\OT1/cmr/m/n/10 ^^Ses en-nek min-den pozit^^S^^Pv $\OML/cmm/m/it/10 ^^O$\OT1/cm
+r/m/n/10 -ra tel-jes^^?ulni kell. Itt a legkisebb fels}o korl^^Satra bevezett^^
+?uk
+ []
+
+
+Overfull \hbox (2.80623pt too wide) in paragraph at lines 152--153
+[]\OT1/cmr/m/n/10 az $1$ val^^Sosz^^S^^Pn}us^^Seggel tel-jes^^?ul}o kon-ver-gen
+ica mag^^Saval vonja a val^^Sosz^^S^^Pn}us^^Segben
+ []
+
+[8]
+Overfull \hbox (2.33401pt too wide) in paragraph at lines 178--180
+\OT1/cmr/m/n/10 t^^?obbv^^Saltoz^^Sos eloszl^^Sasai van-nak megadva ^^Ses felte
+ssz^^?uk, hogy l^^Setezik a val^^Sosz^^S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (5.47157pt too wide) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/10 P^^Seld^^Saul, amikor majd ^^S^^Pgy kezd^^?unk egy t^^Setelt:
+ "vegy^^?unk $\OML/cmm/m/it/10 x[]; [] ; x[]$ \OT1/cmr/m/n/10 k^^?olcs^^?on^^?o
+sen
+ []
+
+[9]
+Overfull \hbox (3.64647pt too wide) in paragraph at lines 187--188
+\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]$ \OT1/cmr/m/n/10 t^^?obbv^^Saltoz^^Sos elosz
+l^^Sasa ($\OML/cmm/m/it/10 F[]$\OT1/cmr/m/n/10 ) meghat^^Sarozott. Az ^^S^^Pgy 
+meghat^^Sarozott
+ []
+
+
+Overfull \hbox (26.52853pt too wide) in paragraph at lines 194--196
+\OT1/cmr/m/n/10 Kolmogorov l^^Satta be, hogy csak ezeket a konzisz-ten-cia krit
+^^Seriumokat kell megk^^?ovetelni.
+ []
+
+[10]
+Overfull \hbox (25.77849pt too wide) in paragraph at lines 219--220
+[]\OT1/cmr/m/n/10 N^^Sezz^^?uk most azt az es-etet, amikor t^^?obbsz^^?or egym^
+^Sas ut^^San dobunk egy dob^^Sokock^^Saval.
+ []
+
+[11]
+Overfull \hbox (9.06548pt too wide) in paragraph at lines 226--228
+\OT1/cmr/m/n/10 erint. Ezen hal-ma-zokba bele^^Sertj^^?uk az ^^?osszes Borel ha
+l-mazt. Ha pedig val^^Sosz^^S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (1.27856pt too wide) in paragraph at lines 230--232
+\OT1/cmr/m/n/10 val^^Sosz^^S^^Pn}us^^Segi v^^Saltoz^^Soval van dol-gunk, en-nek
+ v^^Sarhat^^So ^^Sert^^Seke pedig ^^S^^Pgy sz^^Samolhat^^So: 
+ []
+
+[12]
+Overfull \hbox (11.2922pt too wide) in paragraph at lines 251--252
+[][]\OT1/cmr/m/n/10 Altal^^Sanoss^^Sagban ve-het^^?unk egy tetsz}oleges val^^So
+sz^^S^^Pn}us^^Segi v^^Saltoz^^So csal^^Sadot ($\OML/cmm/m/it/10 x[]; t \OMS/cms
+y/m/n/10 2
+ []
+
+
+Overfull \hbox (4.76445pt too wide) in paragraph at lines 253--254
+[]\OT1/cmr/m/n/10 a tran-sz-form^^Saci^^So $\OML/cmm/m/it/10 x[]$\OT1/cmr/m/n/1
+0 -t $[]$-be viszi, v^^Seges sz^^Sam^^Su $\OML/cmm/m/it/10 x[]$\OT1/cmr/m/n/10 
+-k Baire f^^?uggv^^Senyei ugyana-
+ []
+
+[13]
+Overfull \hbox (2.25322pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 probl^^Sem^^Sak, amik-ben $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 
+darab val^^Sosz^^S^^Pn}us^^Segi v^^Saltoz^^Sokkal van dol-gunk re-duk^^Salhat^^
+Sok
+ []
+
+
+Overfull \hbox (18.50304pt too wide) in paragraph at lines 258--259
+\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 di-menzi^^Sos ko-ordin^^Satat^^Serre, az ol
+yan es-etek pedig, amikor v^^Segtelen sok val^^Sosz^^S^^Pn}us^^Segi
+ []
+
+
+Overfull \hbox (12.74725pt too wide) in paragraph at lines 264--266
+\OT1/cmr/m/n/10 lesz dol-gunk. Ha $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 ^^Ses $\
+OML/cmm/m/it/10 y$ \OT1/cmr/m/n/10 eloszl^^Sasf^^?uggv^^Senyei $\OML/cmm/m/it/1
+0 G$ \OT1/cmr/m/n/10 ^^Ses $\OML/cmm/m/it/10 H$\OT1/cmr/m/n/10 , $\OML/cmm/m/it
+/10 F$ \OT1/cmr/m/n/10 pedig a k^^?oz^^?os eloszl^^Sasf^^?uggv^^Seny,
+ []
+
+[14]
+Overfull \hbox (1.52072pt too wide) in paragraph at lines 287--288
+\OT1/cmr/m/n/10 val^^Sosz^^S^^Pn}us^^Seg^^Set $\OT1/cmr/bx/n/10 P\OMS/cmsy/m/n/
+10 f\OT1/cmr/m/n/10 M\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 !\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 g$\OT1/cm
+r/m/n/10 -vel jel^^?olj^^?uk ^^Ses mindig meghat^^Sarozott a k^^?ovetkez}o
+ []
+
+
+Overfull \hbox (22.4846pt too wide) in paragraph at lines 301--301
+[]\OT1/cmr/bx/n/14.4 Folyamatok K^^?olcs^^?on^^?osen F^^?uggetlen Val^^Sosz^^S^
+^Pn}us^^Segi
+ []
+
+[15] [16] (./veletlenfolyamatok.aux) ) 
+Here is how much of TeX's memory you used:
+ 1411 strings out of 481239
+ 20413 string characters out of 5920377
+ 266621 words of memory out of 5000000
+ 16713 multiletter control sequences out of 15000+600000
+ 540010 words of font info for 53 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,13n,25p,4685b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-supe
+r/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on veletlenfolyamatok.pdf (16 pages, 216046 bytes).
+PDF statistics:
+ 121 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

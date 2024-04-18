@@ -260,8 +260,43 @@ A két megközelítés ugyanazon várható értéket adja.
 Az előbbi gondolatmenet alkalmazása céljából nézzünk egy olyan esetet, amikor $T$ két pontból áll. Vegyük azt a tételt, amikor $x$ és $y$ kölcsönösen független valószínűségi változó, várható értékeik léteznek és $\mathrm{\textbf{E}}\{xy\}$ is létezik, valamint teljesül, hogy:
 \begin{equation}
 	\mathrm{\textbf{E}}\{xy\} = \mathrm{\textbf{E}}\{x\}\mathrm{\textbf{E}}\{y\}.
+	\label{eq:vvvarhato}
 \end{equation}
-Első ránézésre ez nem úgy tűnik mintha egy hagyományos integrálokról kimondott tétel lenne.
+Első ránézésre ez nem úgy tűnik mintha egy hagyományos integrálokról kimondott tétel lenne és gyakran valóban úgy hivatkoznak rá mint a valószínűség számítás egy speciális tételére. Vegyük észre azonban, hogy ebben a tételben csupán két változó szerepel $x$ és $y$, így tehát reprezentálhatjuk őket a síkon. Ebben a reprezentációban valóban csupán egy integrálokról kimondott tétellel lesz dolgunk. Ha $x$ és $y$ eloszlásfüggvényei $G$ és $H$, $F$ pedig a közös eloszlásfüggvény, akkor:
+\[
+	F(\xi,\eta) \equiv G(\xi) H(\eta),
+\]
+mivel a valószínűségi változók függetlenek. A síkon vett reprezentációban (\ref{eq:vvvarhato}) ekkor a következő alakot ölti:
+\begin{equation}
+ \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \xi \eta d G(\xi) dH(\eta) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \xi d G(\xi) dH(\eta) \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \eta d G(\xi) dH(\eta)
+\end{equation}
+A jobb oldalon álló kettős integrál egyszeres integrálra redukálható és így a következőt kapjuk:
+\begin{equation}
+ \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \xi \eta d G(\xi) dH(\eta) = \int_{-\infty}^{\infty} \xi d G(\xi) \int_{-\infty}^{\infty} \eta dH(\eta).
+\end{equation}
+A (\ref{eq:vvvarhato})-ban szereplő kettős integrált tehát iterált integrálként tudjuk kiértékelni. Minden (\ref{eq:vvvarhato})-re adott bizonyítás erre a szabványos bizonyításra vezethető vissza.
+
+Eddig mindig feltettük, hogy a valószínűségi változók, amikkel dolgozunk valósak. A reprezentáció-elmélet komplex valószínűségi változókra való kiterjesztése triviális, ezért most ezt nem részletezzük.
+
+\subsection{Feltételes valószínűségek és várható értékek}
+
+Vegyünk most egy $y$ valószínűségi változót és egy mérhető $\omega$ halmazt, amit jelöljünk $\mathrm{M}$-el. Szeretnénk most feltételes valószínűséget definiálni az $\mathrm{M}$ halmazon. Szeretnénk bizonyos feltételek mellett $y$ várható értékét is definiálni. Mielőtt ezt megtennénk nézzünk két speciális esetet.
+\begin{description}
+	\item[Eset-1] 
+\end{description}
+Tegyük fel, hogy az $x$ valószínűségi változó csak véges, vagy megszámlálható számosságú sor-értékeket ($a_1,a_2,\ldots$) vehet fel. Ha $x(\omega) = a_j$, akkor $\mathrm{M}$ feltételes valószínűségét $\mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}$-vel jelöljük és mindig meghatározott a következő módon ha $\mathbf{P}\{x(\omega) = a_j\} > 0$:
+\begin{equation}
+	\mathbf{P}\{\mathrm{M}|x(\omega) = a_j\} = \frac{\mathbf{P}\{\omega \in \mathrm{M}, x(\omega) = a_j\}}{\mathbf{P}\{x(\omega) = a_j\}}.
+\end{equation}
+Abban a speciális esetben, amikor $y$ csak $b_1,b_2,\ldots$ értékeket vehet fel az $x(\omega) = a_j$ feltételre $y$ feltételes eloszlását a következő módon kapjuk:
+\begin{equation}
+	\mathbf{P}\{y(\omega) = b_k |x(\omega) = a_j\} = \frac{\mathbf{P}\{y(\omega) = b_k, x(\omega) = a_j\}}{\mathbf{P}\{x(\omega) = a_j\}}
+\end{equation}
+A $\mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}$ feltételes valószínűség függ $a_j$-től. Így az $x$ valószínűségi változó által felvett értékeinek függvényét kapjuk. Ha konkrétan $x(\omega)$ helyett a valószínűségi változó értékét írjuk be a feltételes valószínűség definíciójába, akkor egy új $z$ valószínűségi változót kapunk:
+\[
+ z(\omega) = \mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}, \mathrm{ahol} x(\omega) = a_j,
+\]
+ha $\mathbf{P}\{x(\omega) = a_j\} > 0$. $z(\omega)$-t tetszőlegesre választjuk ha ezen az $\omega$ halmazon ($\{x(\omega) = a_j\}$) $0$ valószínűséget venne fel. Egyértelműen megadtuk tehát a $z$ valószínűségi változót, ha nem foglalkozunk a $0$ valószínűségű $\omega$ halmazokkal. $\mathrm{M}$ feltételes valószínűsége $x$ szerint $\mathbf{P}\{\mathrm{M}|x\}$-el jelölendő és ez alatt a $z$ valószínűségi változót értjük (vagy egy ezzel ekvivalens meghatározást).
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
