@@ -294,9 +294,79 @@ Abban a speciális esetben, amikor $y$ csak $b_1,b_2,\ldots$ értékeket vehet f
 \end{equation}
 A $\mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}$ feltételes valószínűség függ $a_j$-től. Így az $x$ valószínűségi változó által felvett értékeinek függvényét kapjuk. Ha konkrétan $x(\omega)$ helyett a valószínűségi változó értékét írjuk be a feltételes valószínűség definíciójába, akkor egy új $z$ valószínűségi változót kapunk:
 \[
- z(\omega) = \mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}, \mathrm{ahol}  x(\omega) = a_j,
+ z(\omega) = \mathbf{P}\{\mathrm{M}|x(\omega) = a_j\},\quad \mathrm{ahol} \quad x(\omega) = a_j,
 \]
-ha $\mathbf{P}\{x(\omega) = a_j\} > 0$. $z(\omega)$-t tetszőlegesre választjuk ha ezen az $\omega$ halmazon ($\{x(\omega) = a_j\}$) $0$ valószínűséget venne fel. Egyértelműen megadtuk tehát a $z$ valószínűségi változót, ha nem foglalkozunk a $0$ valószínűségű $\omega$ halmazokkal. $\mathrm{M}$ feltételes valószínűsége $x$ szerint $\mathbf{P}\{\mathrm{M}|x\}$-el jelölendő és ez alatt a $z$ valószínűségi változót értjük (vagy egy ezzel ekvivalens meghatározást).
+ha $\mathbf{P}\{x(\omega) = a_j\} > 0$. $z(\omega)$-t tetszőlegesre választjuk ha ezen az $\omega$ halmazon ($\{x(\omega) = a_j\}$) $0$ valószínűséget venne fel. Egyértelműen megadtuk tehát a $z$ valószínűségi változót, ha nem foglalkozunk a $0$ valószínűségű $\omega$ halmazokkal. $\mathrm{M}$ feltételes valószínűsége $x$ szerint $\mathbf{P}\{\mathrm{M}|x\}$-el jelölendő és ez alatt a $z$ valószínűségi változót értjük (vagy egy ezzel ekvivalens meghatározást). 
+\begin{equation}
+	\mathbf{P}\{\mathrm{M}|x\} {|}_{x(\omega) = a_j} = \mathbf{P}\{\mathrm{M}|x(\omega) = a_j\}
+\end{equation}
+ha $\mathbf{P}\{x(\omega) = a_j\} > 0$. Most vegyünk $a_j$-k egy tetszőleges halmazát és jelöljük $A$-val, majd vezessük be a következő definíciót:
+\[
+ \Lambda = \{x(\omega) \in A\} = \bigcup_{a_j \in A}\{x(\omega) = a_j\}.
+\]
+Ebben az esetben észre lehet venni a következőt:
+\begin{equation}
+ \mathbf{P}\{\Lambda \mathrm{M} \} = \int_{\Lambda} \mathbf{P}\{\mathrm{M}|x\} d\mathrm{\textbf{P}}.
+	\label{eq:feltvv1}
+\end{equation}
+Hasonló módon az $y$ valószínűségi változó $x$ \textit{szerinti feltételes várható értékét} $\mathrm{\textbf{E}}\{y|x\}$-vel jelöljük és olyan valószínűségi változókra értelmezzük, amik eleget tesznek az alábbi egyenleteknek:
+\[
+	\mathrm{\textbf{E}}\{y|x\} {|}_{x(\omega) = a_j} = \mathrm{\textbf{E}}\{y|x(\omega) = a_j\} = \sum_{k} b_k \mathbf{P}\{y(\omega) =b_k | x(\omega) = a_j \} 
+\]
+és $\mathbf{P}\{x(\omega) = a_j\} > 0$. A következő egyenlőség azonnal következik a definícióból:
+\[
+ \sum_{k} b_k \mathbf{P}\{y(\omega) =b_k, x(\omega) = a_j \} = \sum_{a_j \in A} \mathrm{\textbf{E}}\{y | x(\omega) = a_j \} \mathbf{P}\{x(\omega) = a_j \}.
+\]
+Ezt a következő formában is fel lehet írni:
+\begin{equation}
+	\int_{\Lambda} y d\mathrm{\textbf{P}} = \int_{\Lambda} \mathrm{\textbf{E}}\{y|x\} d\mathrm{\textbf{P}}.
+	\label{eq:feltvv2}
+\end{equation}
+(\ref{eq:feltvv1}) és (\ref{eq:feltvv2})-ből a feltételes valószínűség és várható érték általánosabb definícióját is bevezethetjük és ezt most meg is tesszük.
+\begin{description}
+	\item[Eset-2] 
+\end{description}
+Tegyünk $\Omega$ az $\xi,\eta$ sík és hogy a mérhető $\omega$ halmazok Lebesgue mérhető halmazok, a valószínűségi mértéket pedig a sűrűségfüggvény segítségével a következő módon lehet megadni:
+\[
+	\mathbf{P}\{\Lambda\}=\iint f(\xi,\eta) d \xi d \eta.
+\]
+Az első és második koordináta $x$ és a $y$ függvényeket definiálnak, amelyek a $(\xi,\eta)$ pontokban $\xi$ és $\eta$ értékeket vesznek fel. Ezekre a függvényekre mint valószínűségi változókra tekinthetünk a közös sűrűségfüggvényüket pedig $f$-el jelölhetjük. Bevezethetünk egy új sűrűségfüggvényt ($\eta$ változó szerint):
+\[
+ \frac{f(\xi,\eta)}{\int_{-\infty}^{\infty} f(\xi,\zeta) d \zeta},
+\]
+figyelve arra, hogy a nevező sose legyen $0$. A fenti esettel analóg módon természetesen bevezethetünk egy olyan definíciót $y$ valószínűségi változó feltételes eloszlására, amikor $x(\omega) = \xi$ és az $y$ valószínűségi változó feltételes ($x(\omega) = \xi$) várható értékét megadhatjuk a következő módon is:
+\[
+	\frac{\int_{-\infty}^{\infty}\eta f(\xi,\eta) d\eta}{\int_{-\infty}^{\infty} f(\xi,\eta) d\eta }.
+\]
+Itt most feltettük, hogy $\mathrm{\textbf{E}}\{|y|\} < 0$. Az így megadott definíciók konzisztensek lesznek a következő általános értékű tárgyalásmóddal.
+\begin{description}
+	\item[Általános eset] 
+\end{description}
+Itt most nem egy valószínűségi változó szerinti feltételes valószínűséget és várható értéket fogunk megadni hanem általános koncepciókat ismertetünk és ezeket fogjuk majd speciális esetekre is kimondani. Látni fogjuk, hogy a feltételes valószínűség a feltételes várható érték egy speciális esete, így célszerű először ezzel foglalkozni.
+
+Vegyünk egy tetszőleges $y$ valószínűségi változót, amelynek létezik a várható értéke. Jelöljük $\mathscr{F}$-vel mérhető $\omega$ halmazok Borel mezejét. Az $\omega$ halmazok azon Borel mezejét, ami $\mathscr{F}$ halmaz vagy az $\mathscr{F}$ halmazoktól $0$ valószínűségi halmazokkal tér el $\mathscr{F}' \subset \mathscr{F}$-el fogjuk jelölni. Ismeretes az a tény, miszerint ha van egy valószínűségi változónk, ami $\mathscr{F}'$ mérhető, akkor az $1$ valószínűséggel egyenlő egy olyan valószínűségi változóval, ami $\mathscr{F}$ mérhető. Az $y$ valószínűségi változó $\mathscr{F}$ szerinti feltételes várható értékét $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$-el jelöljük és egy tetszőleges $\omega$ függvényként értelmezzük, ami mérhető az $\mathscr{F}'$ Borel mezőn. A függvénytől megköveteljük továbbá, hogy integrálható legyen és hogy igaz legyen rá a következő egyenlet: 
+\begin{equation}
+	\int_{\Lambda} \mathrm{\textbf{E}}\{y|\mathscr{F}\} d\mathrm{\textbf{P}} = \int_{\Lambda} y d\mathrm{\textbf{P}}, \quad \Lambda \in \mathscr{F}. 
+	\label{eq:feltvv3}
+\end{equation}
+Ugyan ez igaz lesz az $\mathscr{F}'$ Borel mezőre és ha figyelembe vesszük $\mathscr{F}$ és $\mathscr{F}'$ kapcsolatát, így tehát a feltételes várható érték definíciója ekvivalens lesz $\mathscr{F}$-re és $\mathscr{F}'$-re. Vegyük észre, hogy (\ref{eq:feltvv3}) jobb oldala $\Lambda \in \mathscr{F}$ egy függvényét definiálja. Ez a függvény tökéletesen additív és eltűnik, amikor $\mathbf{P}\{\Lambda\} = 0$. A Radon-Nikodym tétel értelmében a $\Lambda$ változó függvénye kifejezhető egy $\Lambda$ feletti integrállal, az integrandus pedig egy $\mathscr{F}$ Borel mezőn mérhető $\omega$ függvény. Az így megadott $\omega$ függvény tehát az $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$ várható érték egy jó definíciója lesz, de elképzelhető más $\omega$ függvény is, ami ezzel $1$ valószínűséggel egyenlő. Megfordítva azt is mondhatjuk, hogy a Radon-Nikodym tétel értelmében a feltételes várható érték két különböző definíciója majdnem mindenhol egyenlő. Így tehát az $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$ várható értéket úgy adtuk meg, mint egy jól megválasztott valószínűségi változó osztály tetszőleges eleme. Ezen osztályból bárhogyan is választunk ki két tetszőleges valószínűségi változót, azok majdnem mindenhol egyenlőek lesznek és bármely olyan valószínűségi változó, ami majdnem mindenhol egyenlő egy olyan valószínűségi változóval, ami az osztályban van maga is az osztályban lesz. Hacsak nem jelezzük, hogy egy speciális esettel van dolgunk, bármikor amikor megjelenik a feltételes várható érték fogalma, akkor azalatt azt értjük, hogy azt bármely ekvivalens definícióra fel lehet cserélni.
+
+Most vegyünk egy $\mathrm{M}$ tetszőleges $\omega$ halmazt. Jelöljük $\mathscr{F}$-vel mérhető $\omega$ halmazok Borel mezejét. Az $y$ valószínűségi változót adjuk meg a következő módon:
+\[
+y(\omega) = \begin{cases}
+    1, & \text{ha } \omega \in \mathrm{M} \\
+    0, & \text{ha } \omega \in \Omega - \mathrm{M}.
+\end{cases}
+\]
+Ebben az esetben $\mathrm{M}$ $\mathscr{F}$ \textit{szerinti feltételes várható értékét} $\mathrm{\textbf{E}}\{\mathrm{M}|\mathscr{F}\}$-el jelöljük és $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$-ként értelmezzük és ez alatt a feltételes várható érték egy tetszőleges definícióját értjük. A feltételes várható érték tehát egy teszőleges $\omega$ függvény, ami $\mathscr{F}$-vel mérhető, ha pedig nem, akkor megköveteljük, hogy majdnem mindenhol egyenlő legyen egy olyan függvénnyel, ami mérhető $\mathscr{F}$-en. A függvény legyen továbbá integrálható és teljesítse a következő egyenletet: 
+\begin{equation}
+	\int_{\Lambda} \mathrm{\textbf{P}}\{ \mathrm{M} | \mathscr{F} \} d\mathrm{\textbf{P}} = \mathrm{\textbf{P}}\{\Lambda \mathrm{M}\}.
+	\label{eq:feltvv3}
+\end{equation}
+Ez a leírás sokat egyszerűsödik, ha fel tudjuk tenni, hogy $\mathscr{F}$-ben benne vannak a $0$ mértékű halmazok is, mert ebben az esetben $\mathscr{F}' = \mathscr{F}$, továbbá a feltételes várható értékek és feltételes valószínűség mérhető lesz $\mathscr{F}$ szerint. Láttuk azonban azt is, hogy minden esetben $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$-nak mindig lesz egy olyan változata, ami mérhető $\mathscr{F}$-en.
+
+Most vegyünk egy tetszőleges $\{x_t, t \in T\}$ valószínűségi változó családot. Az $\omega$ halmazok legkisebb olyan Borel mezejét, ami szerint az $x_t$-k még mérhetők jelöljük $\mathscr{F} = \mathscr{B}(x_t, t \in T)$-vel. Ez alatt azt értjük, hogy $A$ egy olyan Borel halmaz, amire $x_t(\omega) \in A$ és az $\mathscr{F}$ egy olyan Borel mező, amit ilyen valószínűségi változók osztálya generál.
+
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
