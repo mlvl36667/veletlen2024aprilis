@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{enumitem}
 \usepackage{mathrsfs}   % for script capitals
+\newtheorem{theorem}{Tétel}
 \begin{document}
 
 \title{Véletlen folyamatok}
@@ -361,7 +362,7 @@ y(\omega) = \begin{cases}
 Ebben az esetben $\mathrm{M}$ $\mathscr{F}$ \textit{szerinti feltételes várható értékét} $\mathrm{\textbf{E}}\{\mathrm{M}|\mathscr{F}\}$-el jelöljük és $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$-ként értelmezzük és ez alatt a feltételes várható érték egy tetszőleges definícióját értjük. A feltételes várható érték tehát egy teszőleges $\omega$ függvény, ami $\mathscr{F}$-vel mérhető, ha pedig nem, akkor megköveteljük, hogy majdnem mindenhol egyenlő legyen egy olyan függvénnyel, ami mérhető $\mathscr{F}$-en. A függvény legyen továbbá integrálható és teljesítse a következő egyenletet: 
 \begin{equation}
 	\int_{\Lambda} \mathrm{\textbf{P}}\{ \mathrm{M} | \mathscr{F} \} d\mathrm{\textbf{P}} = \mathrm{\textbf{P}}\{\Lambda \mathrm{M}\}.
-	\label{eq:feltvv3}
+	\label{eq:feltvv4}
 \end{equation}
 Ez a leírás sokat egyszerűsödik, ha fel tudjuk tenni, hogy $\mathscr{F}$-ben benne vannak a $0$ mértékű halmazok is, mert ebben az esetben $\mathscr{F}' = \mathscr{F}$, továbbá a feltételes várható értékek és feltételes valószínűség mérhető lesz $\mathscr{F}$ szerint. Láttuk azonban azt is, hogy minden esetben $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$-nak mindig lesz egy olyan változata, ami mérhető $\mathscr{F}$-en.
 
@@ -371,11 +372,55 @@ Most vegyünk egy tetszőleges $\{x_t, t \in T\}$ valószínűségi változó cs
 \]
 jellegű halmazoktól csak a $0$ mértékű halmazokkal tér el. Itt $A$ Borel halmaz (a valós esetben $n$ dimenziós, komplex esetben $2n$ dimenziós). Az $x$ $\omega$ függvény az $x_t$ valószínűségi változók mintavételi terén valószínűségi változó, de csak akkor ha $x$ majdnem mindenhol megegyezik $x_1,\ldots,x_n$ egy Baire függvényével. 
 
-Most vegyünk egy $y$ valószínűségi változót és tegyük fel hogy létezik várható értéke, $\mathrm{M}$ pedig legyen egy mérhető $\omega$ halmaz. Az $y$ valószínűségi változó ($\mathrm{M}$) feltételes várható értéke (valószínűsége) $x_t$ szerint a következő módon jelölendő:
+Most vegyünk egy $y$ valószínűségi változót és tegyük fel hogy létezik várható értéke, $\mathrm{M}$ pedig legyen egy mérhető $\omega$ halmaz. Az $y$ valószínűségi változó [$\mathrm{M}$] feltételes várható értéke [valószínűsége] $x_t$ szerint a következő módon jelölendő:
 \[
-  \mathrm{\textbf{E}}\{y|x_t, t \in T\}, \quad [\mathrm{\textbf{P}}\{ \mathrm{M} | x_t, t \in T\}]
+  \mathrm{\textbf{E}}\{y|x_t, t \in T\}, \quad [\mathrm{\textbf{P}}\{ \mathrm{M} | x_t, t \in T\}],
 \]
+és a következő módon definiálhatjuk ezeket:
+\[
+	\mathrm{\textbf{E}}\{y|\mathscr{F}\}, \quad [\mathrm{\textbf{P}}\{ \mathrm{M} | \mathscr{F}\}],
+\]
+és ezen ekvivalens definíciók közül használhatjuk bármelyiket. Az itt megjelenő $\mathscr{F}$-et úgy kell érteni, mint ahogyan azt az előző bekezdésben bemutattuk. Most is, mint mindig $\mathscr{F}$ helyett vehetünk $\mathscr{F}'$-t. A vizsgálatunk tárgyául szolgáló feltételes várható érték tehát olyan valószínűségi változóként van definiálva, ami $x_t$ mintavételi terén mérhető, integrálja pedig megegyezik $y$ integráljával minden olyan halmaz felett, ami $x_t$ mintavételi terén mérhető. Ha ilyen módon tudjuk $\mathscr{F}$-et definiálni, akkor (\ref{eq:feltvv3}) és (\ref{eq:feltvv4}) egy kicsit kényelmesebb alakra hozható, hiszen a definíciót az $\omega$ halmazok osztályára értelmezhetjük, amire az egyenleteknek van értelme. Ezen egyenletek jobb és bal oldala $\Lambda$ egy tökéletesen additív függvényét adja meg és ezen függvényeket értékeik egyértelműen meghatározzák bármely $\mathscr{F}_0$ részmezőn ($\mathscr{F}$-en), ami $\mathscr{F}$-et generálja. A jelen esetben $\mathscr{F}_0$-t választhatjuk $\omega$ halmazok osztályának, amely a következő alakú halmazok véges unióképzéséből jön létre:
+\[
+ \{x_{t_j} \in X_j, j=1,\ldots,n\},
+\]
+ahol ($t_1,\ldots,t_n$) $T$ egy tetszőleges véges részhalmaza, az $X_j$-k pedig Borel halmazok. Elegendő tehát ha (\ref{eq:feltvv3}) vagy (\ref{eq:feltvv4}) (attól függ melyikről van szó) egy ilyen $\Lambda$-ra teljesül. Mivel (\ref{eq:feltvv3}) és (\ref{eq:feltvv4}) mindkét oldalán az integrálandó halmazokban additív elegendő csak külön az összegzendő tagokat vizsgálni. Ha nagyon szükséges, még akár azt is feltehetjük, hogy az $X_j$-k jobbról félig zárt intervallumok (vagy nyíltak vagy zártak). 
 
+Nézzünk egy speciális esetet, amikor $T$ az $1,\ldots,k$ egészekből áll. Ebben az esetben ez a két mennyiség:
+\[
+	\mathrm{\textbf{E}}\{y|x_1,\ldots,x_k\}, \quad \mathrm{\textbf{P}}\{ \mathrm{M} | x_1,\ldots,x_k \}
+\]
+az előző két esetben adott diszkusszió alapján definiált. Valójában, az "Eset-1"-ben megadott $\int_{\Lambda} y d\mathrm{\textbf{P}} = \int_{\Lambda} \mathrm{\textbf{E}}\{y|x\} d\mathrm{\textbf{P}}$ általános esetben feltétel lesz a $\int_{\Lambda} \mathrm{\textbf{E}}\{y|\mathscr{F}\} d\mathrm{\textbf{P}} = \int_{\Lambda} y d\mathrm{\textbf{P}}, \quad \Lambda \in \mathscr{F}$ definícióra. Most nézzük a feltételes valószínűség olyan definiálját, ami mérhető $\mathscr{F} = \mathscr{B}(x_t,\ldots,x_k)$ szerint. Már láttuk, hogy ezt fel lehet írni a következő módon:
+\[
+ \mathrm{\textbf{E}}\{y|x_1,\ldots,x_k\} = \Phi(x_1,\ldots,x_k),
+\]
+és itt $\Phi(x_1,\ldots,x_k)$ egy $k$ változós Baire függvény. Ebben az esetben ezt gyakran így írjuk:
+\[
+	\mathrm{\textbf{E}}\{ x_j(\omega) = \xi_j, j=1,\ldots,k\}
+\]
+ehelyett:
+\[
+ \mathrm{\textbf{E}}\{y|x_1,\ldots,x_k\}{|}_{x_j(\omega) = \xi_j, j=1,\ldots,k} = \Phi(\xi_1,\ldots,\xi_k).
+\]
+Láthatjuk tehát, hogy miért lehet közös alapokon megadni 
+\[
+ \mathrm{\textbf{E}}\{y|x_t, t \in T\}, \quad \mathrm{\textbf{P}}\{ \mathrm{M} | x_t, t \in T\},
+\]
+úgy mint egy $y$ valószínűségi változó szerinti feltételes várható értéket és $\mathrm{M}$ valószínűséget $x_t$ vagy $x_t(\omega), t \in T$ adott értékeire. 
+
+\subsection{A feltételes valószínűség és várható érték általános tulajdonságai}
+
+Vegyünk egy várható értékkel rendelkező tetszőleges valószínűségi változót ($y$). Legyenek $\mathscr{F}$ és $\mathscr{G}$ mérhető $\omega$ halmazok Borel mezejei. Jelöljük továbbá $\mathscr{F}'$-vel $\omega$ halmazok Borel mezejét, ahol az $\omega$ halmazok vagy az $\mathscr{F}$ Borel mezőn vannak, vagy azoktól $0$ mértékű halmazokkal térnek el. Hasonlóan $\mathscr{G}$-re is. Most tegyük fel hogy $\mathscr{G}' \subset \mathscr{F}'$. Ebben az esetben $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ és $\mathrm{\textbf{E}}\{y | \mathscr{G}\}$ nem biztos hogy $1$ valószínűséggel megegyeznek. A második átlagolás egy ritkább átlagolás mint az első. Még pontosabban fogalmazva azt mondhatjuk, hogy mindkét esetben $\mathscr{G}'$ halmazok felett integráljuk az $y$ valószínűségi változót, de az első nem biztos, hogy $\mathscr{G}'$ mérhető. Abban az esetben viszont ha az első esetben beszélhetünk $\mathscr{G}'$ mérhetőségről, akkor a két várható érték $1$ valószínűséggel megegyeznik. Erről szól a következő tétel:
+\begin{theorem}
+	Ha veszünk $\mathscr{G}' \subset \mathscr{F}'$ Borel mezőket és feltesszük, hogy a várható érték valamelyik meghatározását használva (így az összesre igaz lesz) $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ mérhető $\mathscr{G}'$ szerint, akkor $1$ valószínűséggel igaz a következő:
+\begin{equation}
+	\mathrm{\textbf{E}}\{y | \mathscr{F}\} = \mathrm{\textbf{E}}\{y | \mathscr{G}\}.
+\end{equation}
+\end{theorem}
+A bizonyításhoz elegendő azt megjegyezni, hogy $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ $\mathscr{G}'$ mérhető a hipotézisünk miatt és hogy $\mathscr{G}'$ felett az integráljai megegyeznek $y$ integráljaival (még $\mathscr{F}'$ feletti integráljai is megegyeznek $y$ integráljaival). $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ így tehát kielégíti azokat a feltételeket, amik $\mathrm{\textbf{E}}\{y | \mathscr{G}\}$-t definiálják. 
+\begin{theorem}
+
+\end{theorem}
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
