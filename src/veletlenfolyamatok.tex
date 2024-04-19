@@ -411,7 +411,7 @@ Láthatjuk tehát, hogy miért lehet közös alapokon megadni
 \subsection{A feltételes valószínűség és várható érték általános tulajdonságai}
 
 Vegyünk egy várható értékkel rendelkező tetszőleges valószínűségi változót ($y$). Legyenek $\mathscr{F}$ és $\mathscr{G}$ mérhető $\omega$ halmazok Borel mezejei. Jelöljük továbbá $\mathscr{F}'$-vel $\omega$ halmazok Borel mezejét, ahol az $\omega$ halmazok vagy az $\mathscr{F}$ Borel mezőn vannak, vagy azoktól $0$ mértékű halmazokkal térnek el. Hasonlóan $\mathscr{G}$-re is. Most tegyük fel hogy $\mathscr{G}' \subset \mathscr{F}'$. Ebben az esetben $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ és $\mathrm{\textbf{E}}\{y | \mathscr{G}\}$ nem biztos hogy $1$ valószínűséggel megegyeznek. A második átlagolás egy ritkább átlagolás mint az első. Még pontosabban fogalmazva azt mondhatjuk, hogy mindkét esetben $\mathscr{G}'$ halmazok felett integráljuk az $y$ valószínűségi változót, de az első nem biztos, hogy $\mathscr{G}'$ mérhető. Abban az esetben viszont ha az első esetben beszélhetünk $\mathscr{G}'$ mérhetőségről, akkor a két várható érték $1$ valószínűséggel megegyeznik. Erről szól a következő tétel:
-\begin{theorem}
+\begin{theorem}\label{th:t8-1}
 	Ha veszünk $\mathscr{G}' \subset \mathscr{F}'$ Borel mezőket és feltesszük, hogy a várható érték valamelyik meghatározását használva (így az összesre igaz lesz) $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ mérhető $\mathscr{G}'$ szerint, akkor $1$ valószínűséggel igaz a következő:
 \begin{equation}
 	\mathrm{\textbf{E}}\{y | \mathscr{F}\} = \mathrm{\textbf{E}}\{y | \mathscr{G}\}.
@@ -419,8 +419,21 @@ Vegyünk egy várható értékkel rendelkező tetszőleges valószínűségi vá
 \end{theorem}
 A bizonyításhoz elegendő azt megjegyezni, hogy $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ $\mathscr{G}'$ mérhető a hipotézisünk miatt és hogy $\mathscr{G}'$ felett az integráljai megegyeznek $y$ integráljaival (még $\mathscr{F}'$ feletti integráljai is megegyeznek $y$ integráljaival). $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ így tehát kielégíti azokat a feltételeket, amik $\mathrm{\textbf{E}}\{y | \mathscr{G}\}$-t definiálják. 
 \begin{theorem}
-
+	Vegyünk egy valószínűségi változó családot és jelöljük ezt így: $\{x_t, t \in T\}$. Tegyük fel, hogy $T$ nem megszámlálhatóan végtelen. Ekkor ha $y$ olyan hogy létezik várható értéke, akkor lesz egy olyan megszámlálhatóan végtelen $T$ rész-aggregátum, $\{t_n,n \geq 1\}$ (ez $y$-tól függ), amire:
+	\begin{equation}
+		\mathrm{\textbf{E}}\{y | x_t, t \in T \} = \mathrm{\textbf{E}}\{y | x_{t_1},x_{t_2},\ldots\}.
+	\end{equation}
 \end{theorem}
+Jelöljük most $T$ tetszőleges részhalmazát $S$-el, azt a legkisebb olyan Borel mezőt, ami szerint az $x_t$-k, $t \in S$ még mérhetők jelöljük $\mathscr{F}_S = \mathscr{B}(x_t, t \in S)$-vel. $\mathrm{\textbf{E}}\{y | x_t, t \in T \}$-re tekinthetünk úgy mint $\mathrm{\textbf{E}}\{y | \mathscr{F}_T \}$ egy verziója. Mostantól az $\mathscr{F}_T$ szerint mérhető feltételes várható értéket jelöljük $\mathrm{\textbf{E}}\{y | \mathscr{F}_T \}$-vel. Mivel ez a várható érték mérhető $\mathscr{F}_T$ szerint, $T$-nek mindig lesz egy olyan megszámlálhatóan végtelen $S$ részhalmaza úgy hogy $\mathrm{\textbf{E}}\{y | \mathscr{F}_T \}$ $\mathscr{F}_S \subset \mathscr{F}_T$ mérhető. Ekkor pedig (Tétel-\ref{th:t8-1}) miatt $1$ valószínűséggel teljesül, hogy 
+\[
+ \mathrm{\textbf{E}}\{y | \mathscr{F}_T \} = \mathrm{\textbf{E}}\{y | \mathscr{F}_S \}, \quad \mathrm{Q.E.D.}
+\]
+Most ha $\mathscr{F}$ mérhető $\omega$ halmazok Borel mezeje, és ha $z$ egy olyan $\omega$ függvény, ami $\mathscr{F}$ szerint mérhető és ha $\mathrm{\textbf{E}}\{|z|\} < \infty$, akkor:
+\[
+	\mathrm{\textbf{E}}\{z | \mathscr{F} \} = z
+\]
+$1$ valószínűséggel teljesül. $z$-t tehát definiálja az adott feltételes várható érték. Ezt a gondolatot még jobban általánosítva jutunk el a következő tételhez:
+
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
