@@ -433,6 +433,22 @@ Most ha $\mathscr{F}$ mérhető $\omega$ halmazok Borel mezeje, és ha $z$ egy o
 	\mathrm{\textbf{E}}\{z | \mathscr{F} \} = z
 \]
 $1$ valószínűséggel teljesül. $z$-t tehát definiálja az adott feltételes várható érték. Ezt a gondolatot még jobban általánosítva jutunk el a következő tételhez:
+\begin{theorem}
+	Vegyünk egy $y$ valószínűségi változót. $z$ legyen egy $\omega$ függvény, ami $\omega$ halmazokból generált $\mathscr{F}$ Borel mező szerint mérhető. Ha még az is teljesül, hogy $\mathrm{\textbf{E}}\{|y|\} < \infty$ és hogy $\mathrm{\textbf{E}}\{|zy|\} < \infty$, akkor $1$ valószínűséggel igaz hogy:
+	\begin{equation}
+		\mathrm{\textbf{E}}\{zy | \mathscr{F} \} = z \mathrm{\textbf{E}}\{y | \mathscr{F} \}.
+		\label{eq:8-3}
+	\end{equation}
+	Az is igaz továbbá, hogy
+	\begin{equation}
+		\mathrm{\textbf{E}}\{[y - \mathrm{\textbf{E}}\{y | \mathscr{F} \} ]z \} = 0.
+		\label{eq:8-3v}
+	\end{equation}
+\end{theorem}
+(\ref{eq:8-3v}) triviális következménye (\ref{eq:8-3})-nak. A feltételes valószínűséghez ($\mathrm{\textbf{E}}\{y | \mathscr{F} \}$) szükséges feltételből következik, hogy $z$ felvehet-e $0$ és $1$ értékeket. Ahhoz, hogy belássuk (\ref{eq:8-3v})-t, csak a feltételes valószínűség definícióját kell használni: 
+\begin{equation}
+ \int_{\Lambda} zy d\mathrm{\textbf{P}} = \int_{\Lambda} z \mathrm{\textbf{E}}\{y | \mathscr{F} \} d\mathrm{\textbf{P}}, \quad \Lambda \in \mathscr{F}.
+\end{equation}
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
