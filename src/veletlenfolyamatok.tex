@@ -453,7 +453,58 @@ Ebben az esetben ha attól függően, hogy $z(\omega)$ $0$ vagy $1$ értéket ve
 \begin{equation}
  \int_{\Lambda \mathrm{M} } y d\mathrm{\textbf{P}} = \int_{\Lambda \mathrm{M}} \mathrm{\textbf{E}}\{y | \mathscr{F} \} d\mathrm{\textbf{P}},
 \end{equation}
-ez az egyenlet pedig $\int_{\Lambda \mathrm{M}} \mathrm{\textbf{E}}\{y | \mathscr{F} \} d\mathrm{\textbf{P}}$ definíciója miatt biztosan teljesülni fog.
+ez az egyenlet pedig $\int_{\Lambda \mathrm{M}} \mathrm{\textbf{E}}\{y | \mathscr{F} \} d\mathrm{\textbf{P}}$ definíciója miatt biztosan teljesülni fog. Ha $z$ ilyen függvények lineáris kombinációja, akkor $\int_{\Lambda} zy d\mathrm{\textbf{P}} = \int_{\Lambda} z \mathrm{\textbf{E}}\{y | \mathscr{F} \} d\mathrm{\textbf{P}}$ teljesül. Ez azt jelenti, hogy $z$ csak véges értéket vehet fel, mindegyiket egy $\mathscr{F}$ halmazon és ezt egy közelítő eljárással általánosítani is lehet. 
+
+$\mathrm{\textbf{E}}\{zy | \mathscr{F} \} = z \mathrm{\textbf{E}}\{y | \mathscr{F} \}$ abban az esetben különösen hasznos, amikor így írható fel:
+\begin{equation}
+	\mathrm{\textbf{E}}\{\Phi(x)y | x \} = \Phi(x) \mathrm{\textbf{E}}\{y | x \}, 
+\end{equation}
+és ez $1$ valószínűséggel teljesül. Itt $x$ és $y$ valószínűségi változók, $\Phi$ pedig egy Baire függvény. Teljesül továbbá, hogy $\mathrm{\textbf{E}}\{|y|\} < \infty$ és hogy $\mathrm{\textbf{E}}\{\Phi(x)|y|\} < \infty$. Az előző fejezetben $y$ feltételes valószínűsége $y$ feltételes valószínűségi mérték szerinti integráljaként volt definiálva és erre két esetet adtunk meg. Ennek ellenére látni fogjuk azonban, hogy ez a definíció nem mindig helytálló, hiszen $\mathrm{\textbf{P}}\{ \mathrm{M} | \mathscr{F} \}$ nem mindig tekinthető valószínűségi mértéknek $\mathrm{M}$-ben rögzített $\omega$-ra. Ettől függetlenül $\mathrm{\textbf{E}}\{y | \mathscr{F} \}$-re ha funkcionálként tekintünk, akkor egy sok integrál-jellegű tulajdonságot fedezhetünk fel benne. Most ezt próbáljuk szemléltetni. Innentől kezdve, $y$ valószínűségi változó, $\mathscr{F}$ pedig $\omega$ halmazok Borel mezeje.
+
+CE$_1$ $1$ valószínűséggel teljesül, hogy $\mathrm{\textbf{E}}\{1 | \mathscr{F} \} = 1$.
+
+CE$_2$ Ha $y \geq 0$, akkor $1$ valószínűséggel teljesül, hogy $\mathrm{\textbf{E}}\{y | \mathscr{F} \} \geq 0$.
+
+CE$_3$ Ha $c_1,\ldots,c_n$ konstansok, akkor $1$ valószínűséggel teljesül, hogy
+\[
+ \mathrm{\textbf{E}}\{ \sum_{j = 1}^{n} c_j y_j | \mathscr{F} \} = \sum_{j = 1}^{n} c_j \mathrm{\textbf{E}}\{  y_j | \mathscr{F} \}, 
+\]
+
+CE$_4$ $1$ valószínűséggel teljesül, hogy $|\mathrm{\textbf{E}}\{y | \mathscr{F} \}| \leq \mathrm{\textbf{E}}\{|y| | \mathscr{F} \} $
+
+CE$_5$ Ha $1$ valószínűséggel teljesül, hogy $ \lim_{m \to \infty} y_n = y$ és ha van egy $x \geq 0$ valószínűségi változó, amire $\mathrm{\textbf{E}}\{x\} < \infty$, úgy hogy $1$ valószínűséggel teljesül, hogy:
+\[
+ |y_n(\omega)| \leq x(\omega),
+\]
+akkor $1$ valószínűséggel teljesül, hogy:
+\[
+ \lim_{n \to \infty} \mathrm{\textbf{E}}\{  y_n | \mathscr{F} \} = \mathrm{\textbf{E}}\{  y | \mathscr{F} \}.
+\]
+A következő fejezetben integrál-tételek és reprezentáció-elmélet segítségével bizonyítjuk ezeket az állításokat. Sokat tanulhatunk belőle azonban ha itt közvetlen módon megpróbáljuk őket levezetni. CE$_1$, CE$_2$ és CE$_3$ a feltételes várható érték definíciójából egyből következnek. CE$_4$ bebizonyításához feltesszük, hogy $y$ valós, majd használjuk CE$_2$-t. Ekkor $1$ valószínűséggel teljesül, hogy
+\[
+  \mathrm{\textbf{E}}\{|y| - y | \mathscr{F} \} \geq 0,
+\]
+\[
+  \mathrm{\textbf{E}}\{|y| + y | \mathscr{F} \} \geq 0,
+\]
+Majd CE$_3$ használatából következik, hogy $1$ valószínűséggel teljesül, hogy
+\[
+  \mathrm{\textbf{E}}\{y | \mathscr{F} \} \leq \mathrm{\textbf{E}}\{|y| | \mathscr{F} \},
+\]
+\[
+  -\mathrm{\textbf{E}}\{y | \mathscr{F} \} = \mathrm{\textbf{E}}\{-y | \mathscr{F} \} \leq \mathrm{\textbf{E}}\{|y| | \mathscr{F} \},
+\]
+és ebből pedig következik, hogy CE$_4$ $1$ valószínűséggel teljesül. Ha $y$ pedig komplex értékű lenne, válasszuk meg $z$-t úgy hogy eleget tegyen a következőknek:
+\[
+z(\omega) = \begin{cases}
+    0, & \text{ha } \mathrm{\textbf{E}}\{|y| | \mathscr{F} \} = 0, \\
+    z(\omega)\mathrm{\textbf{E}}\{y | \mathscr{F} \} = |\mathrm{\textbf{E}}\{y | \mathscr{F} \}|, & \text{ha } \mathrm{\textbf{E}}\{|y| | \mathscr{F} \} \neq 0.
+\end{cases}
+\]
+Itt most a feltételes várható érték egy verzióját kiválasztottnak tekintjük és le is rögzítjük. $zy$ valós részét hívjuk $z_1$-nek. Ha pedig kihasználjuk, hogy $z$ $\mathscr{F}$ mérhető, akkor $1$ valószínűséggel teljesül, hogy
+\[
+ |\mathrm{\textbf{E}}\{y | \mathscr{F} \}| = z \mathrm{\textbf{E}}\{y | \mathscr{F} \} = \mathrm{\textbf{E}}\{zy | \mathscr{F} \} = \mathrm{\textbf{E}}\{z_1 | \mathscr{F} \}
+\]
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
