@@ -503,8 +503,17 @@ z(\omega) = \begin{cases}
 \]
 Itt most a feltételes várható érték egy verzióját kiválasztottnak tekintjük és le is rögzítjük. $zy$ valós részét hívjuk $z_1$-nek. Ha pedig kihasználjuk, hogy $z$ $\mathscr{F}$ mérhető, akkor $1$ valószínűséggel teljesül, hogy
 \[
- |\mathrm{\textbf{E}}\{y | \mathscr{F} \}| = z \mathrm{\textbf{E}}\{y | \mathscr{F} \} = \mathrm{\textbf{E}}\{zy | \mathscr{F} \} = \mathrm{\textbf{E}}\{z_1 | \mathscr{F} \}
+ |\mathrm{\textbf{E}}\{y | \mathscr{F} \}| = z \mathrm{\textbf{E}}\{y | \mathscr{F} \} = \mathrm{\textbf{E}}\{zy | \mathscr{F} \} = \mathrm{\textbf{E}}\{z_1 | \mathscr{F} \}.
 \]
+Mivel $z_1$ valós, használhatjuk CE$_4$ valós változazát, amit már be is bizonyítottunk, és további egyenlőtlenséget írhatunk fel, hiszen: 
+\[
+ |z_1(\omega)| \leq |y(\omega)|,
+\]
+és így megkaphatjuk a bizonyítandót:
+\[
+ |\mathrm{\textbf{E}}\{y | \mathscr{F} \}| \leq \mathrm{\textbf{E}}\{|z_1| | \mathscr{F} \} \leq \mathrm{\textbf{E}}\{|y| | \mathscr{F} \},
+\]
+ami $1$ valószínűséggel teljesül.
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
