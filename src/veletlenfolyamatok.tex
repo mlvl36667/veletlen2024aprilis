@@ -513,7 +513,50 @@ Mivel $z_1$ valós, használhatjuk CE$_4$ valós változazát, amit már be is b
 \[
  |\mathrm{\textbf{E}}\{y | \mathscr{F} \}| \leq \mathrm{\textbf{E}}\{|z_1| | \mathscr{F} \} \leq \mathrm{\textbf{E}}\{|y| | \mathscr{F} \},
 \]
-ami $1$ valószínűséggel teljesül.
+ami $1$ valószínűséggel teljesül. CE$_5$ bebizonyításához vezessük be a következő definíciót: 
+\[
+	\hat{y}_{n}(\omega) = \underset{j \geq n}{\mathrm{L.F.K.}} |y_j(\omega) - y(\omega)|.
+\]
+Ebben az esetben mindig $1$ valószínűséggel teljesül teljesül, hogy:
+\[
+ \hat{y}_{1}(\omega) \geq \hat{y}_{2}(\omega) \geq \ldots \geq 0, \quad \hat{y}_{n}(\omega) \leq 2 x(\omega),
+\]
+illetve az is $1$ valószínűséggel teljesül, hogy: 
+\[
+ \lim_{n \to \infty} \hat{y}_{n}(\omega) = 0.
+\]
+Most pedig CE$_2$-t és CE$_3$-at kihasználva kapjuk, hogy $1$ valószínűséggel teljesül, hogy:
+\[
+ |\mathrm{\textbf{E}}\{y | \mathscr{F} \} - \mathrm{\textbf{E}}\{y_n | \mathscr{F} \} | = |\mathrm{\textbf{E}}\{y - y_n| \mathscr{F} \}| \leq \mathrm{\textbf{E}}\{|y - y_n|| \mathscr{F} \} \leq \mathrm{\textbf{E}}\{\hat{y}_{n} | \mathscr{F} \}.
+\]
+Így tehát elég belátni azt, hogy $1$ valószínűséggel teljesül, hogy:
+\[
+ \lim_{n \to \infty} \mathrm{\textbf{E}}\{\hat{y}_{n} | \mathscr{F} \} = 0.
+\]
+Most pedig CE$_2$-t és CE$_3$-at kihasználva kapjuk, hogy $1$ valószínűséggel teljesül, hogy:
+\[
+ \mathrm{\textbf{E}}\{\hat{y}_{1} | \mathscr{F} \} \geq \mathrm{\textbf{E}}\{\hat{y}_{2} | \mathscr{F} \} \geq \ldots \geq 0.
+\]
+Ebből pedig $1$ valószínűséggel következik a következő konvergencia tulajdonság:
+\[
+ \lim_{n \to \infty} \mathrm{\textbf{E}}\{\hat{y}_{n} | \mathscr{F} \} = w.
+\]
+Most pedig ha használjuk a feltételes várható érték definícióját akkor a következőt kapjuk:
+\[
+ \mathrm{\textbf{E}}\{ w \} \leq \mathrm{\textbf{E}}\{ \mathrm{\textbf{E}}\{\hat{y}_{n} | \mathscr{F} \}  \}  = \mathrm{\textbf{E}}\{\hat{y}_{n} \}.
+\]
+Itt $n \to \infty$ esetben $\mathrm{\textbf{E}}\{\hat{y}_{n} \}$ $0$-hoz tart, hiszen ez $\hat{y}_{n}$ integrálja, amit pedig $2x$ dominál és ez pedig szintén $0$-hoz tart ha $n \to \infty$. Ezekből következik, hogy $\mathrm{\textbf{E}}\{ w \} = 0$, és így tehát $w = 0$ $1$ valószínűséggel. Q.E.D.
+
+A feltételes várható érték tulajdonságaiból következnek a feltételes valószínűség következő tulajdonságai. $\mathrm{M}$ legyen mérhető $\omega$ halmaz, $\mathscr{F}$ pedig mérhető $\omega$ halmazok Borel mezeje.
+
+CP$_1$: $1$ valószínűséggel teljesül, hogy: $0 \leq \mathrm{\textbf{P}} \{\mathrm{M} | \mathscr{F} \}\leq 1$
+CP$_2$: $1$ valószínűséggel teljesül, hogy: 
+\[
+\mathrm{\textbf{P}} \{\mathrm{M} | \mathscr{F} \}  = \begin{cases}
+    0, & \text{ha } \mathrm{\textbf{P}} \{\mathrm{M} \}  = 0 \\
+    1, & \text{ha } \mathrm{\textbf{P}} \{\mathrm{M} \}  = 1 \\
+\end{cases}
+\]
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
