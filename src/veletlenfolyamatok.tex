@@ -550,6 +550,7 @@ Itt $n \to \infty$ esetben $\mathrm{\textbf{E}}\{\hat{y}_{n} \}$ $0$-hoz tart, h
 A feltételes várható érték tulajdonságaiból következnek a feltételes valószínűség következő tulajdonságai. $\mathrm{M}$ legyen mérhető $\omega$ halmaz, $\mathscr{F}$ pedig mérhető $\omega$ halmazok Borel mezeje.
 
 CP$_1$: $1$ valószínűséggel teljesül, hogy: $0 \leq \mathrm{\textbf{P}} \{\mathrm{M} | \mathscr{F} \}\leq 1$
+
 CP$_2$: $1$ valószínűséggel teljesül, hogy: 
 \[
 \mathrm{\textbf{P}} \{\mathrm{M} | \mathscr{F} \}  = \begin{cases}
@@ -557,6 +558,18 @@ CP$_2$: $1$ valószínűséggel teljesül, hogy:
     1, & \text{ha } \mathrm{\textbf{P}} \{\mathrm{M} \}  = 1 \\
 \end{cases}
 \]
+
+CP$_3$: $1$ valószínűséggel teljesül, hogy $\lim_{n \to \infty} \mathrm{\textbf{P}} \{M_n | \mathscr{F} \} =\mathrm{\textbf{P}} \{M | \mathscr{F} \}$, ha vagy
+\[
+M_1 \supset M_2 \ldots,\quad  \bigcap\limits_{n} \mathrm{M}_n = \mathrm{M}
+\]
+vagy
+\[
+M_1 \subset M_2 \ldots, \quad \bigcup\limits_{n}  \mathrm{M}_n = \mathrm{M}.
+\]
+
+CP$_4$: $1$ valószínűséggel teljesül, hogy $\mathrm{\textbf{P}} \{ \bigcup\limits_{n}  \mathrm{M}_n | \mathscr{F} \} = \sum\limits_{n} \mathrm{\textbf{P}} \{ \mathrm{M}_n | \mathscr{F} \}$, ha $\mathrm{M}_1, \mathrm{M}_2, \ldots $ diszjunktak, végesek vagy megszámlálhatóan végtelenek.
+
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
