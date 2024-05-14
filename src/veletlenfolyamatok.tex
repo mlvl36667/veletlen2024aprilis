@@ -600,9 +600,21 @@ Ebben az esetben,
 \]
 $1$ valószínűséggel teljesül továbbá az is, hogy 
 \[
-	\mathrm{\textbf{E}}\{y_{n,\delta} | \mathscr{F}\} = \sum_{-\infty}^{\infty} j \delta \mathrm{\textbf{P}} \{ j \delta < y(\omega) \le (j+1) \delta | \mathscr{F}\}.
+	\mathrm{\textbf{E}}\{y_{n,\delta} | \mathscr{F}\} = \sum_{-\infty}^{\infty} j \delta \mathrm{\textbf{P}} \{ j \delta < y(\omega) \le (j+1) \delta | \mathscr{F}\},
 \]
+és így pedig beláttuk, hogy $1$ valószínűséggel teljesül hogy
+\[
+ \lim\limits_{n \to \infty } \sum_{-n}^{n} j \delta \mathrm{\textbf{P}} \{ j \delta < y(\omega) \le (j+1) \delta | \mathscr{F}\} = \mathrm{\textbf{E}}\{y_{\delta} | \mathscr{F}\}.
+\]
+Most alkalmazzuk ezt az eredményt $|y|$-ra, és azt kapjuk, hogy az előző egyenletben a végtelen sor, amely egy részleges összege, abszolút konvergens lesz $1$ valószínűséggel. Így tehát $1$ valószínűséggel teljesül, hogy
+\[
+  \sum_{-n}^{n} j \delta \mathrm{\textbf{P}} \{ j \delta < y(\omega) \le (j+1) \delta | \mathscr{F}\} = \mathrm{\textbf{E}}\{y_{\delta} | \mathscr{F}\}.
+\]
+A Tétel-\ref{th:t8-4} utolsó feltételezése CE$_5$ azonnali következménye ha azt az $\{y_{\delta_k}\}$ sorra alkalmazzuk.
 
+\subsection{Feltételes Valószínűségi Eloszlások}
+
+Nagyon kézenfekvő lenne ha a valószínűség számításban minden $\omega$ halmazok $\mathscr{F}$ Borel mezejéhez lenne definiálva egy függvény, ami minden mérhető $\omega$ (M) halmazra és $\omega$ pontra értelmezett és ennek értéke $P(M,\omega)$ lenne az $M,\omega$ argumentumban úgy hogy teljesülnek a következők:
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
