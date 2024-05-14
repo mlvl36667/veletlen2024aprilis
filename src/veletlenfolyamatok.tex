@@ -568,7 +568,41 @@ vagy
 M_1 \subset M_2 \ldots, \quad \bigcup\limits_{n}  \mathrm{M}_n = \mathrm{M}.
 \]
 
-CP$_4$: $1$ valószínűséggel teljesül, hogy $\mathrm{\textbf{P}} \{ \bigcup\limits_{n}  \mathrm{M}_n | \mathscr{F} \} = \sum\limits_{n} \mathrm{\textbf{P}} \{ \mathrm{M}_n | \mathscr{F} \}$, ha $\mathrm{M}_1, \mathrm{M}_2, \ldots $ diszjunktak, végesek vagy megszámlálhatóan végtelenek.
+CP$_4$: $1$ valószínűséggel teljesül, hogy $\mathrm{\textbf{P}} \{ \bigcup\limits_{n}  \mathrm{M}_n | \mathscr{F} \} = \sum\limits_{n} \mathrm{\textbf{P}} \{ \mathrm{M}_n | \mathscr{F} \}$, ha $\mathrm{M}_1, \mathrm{M}_2, \ldots $ diszjunktak, végesek vagy megszámlálhatóan végtelenek. A feltételes valószínűség és várható érték fenti tulajdonságainak kikötésével a feltételes várható érték egy jól használható kiértékelési módját tudjuk így most megadni. 
+\begin{theorem}\label{th:t8-4}
+Vegyünk egy olyan $y$ valószínűségi változót, amely várható értéke létezik. Jelöljük $\mathscr{F}$-el a mérhető $\omega$ halmazok Borel mezejét. $\delta$ jelöljön egy pozitív egész számot. Ebben az esetben a következő összeg abszolút konvergens lesz $1$ valószínűséggel:
+\begin{equation}
+	x_{\delta} = \sum_{-\infty}^{\infty} (j+1) \delta\mathrm{\textbf{P}} \{ j\delta < y(\omega) \le (j+1)\delta | \mathscr{F} \}.
+\end{equation}
+	Továbbá ha még az is teljesül, hogy $\lim\limits_{k \to \infty } \delta_k = 0$, akkor $1$ valószínűséggel teljesül, hogy:
+\begin{equation}
+	\lim\limits_{k \to \infty } x_{\delta_k} = \mathrm{\textbf{E}}\{y | \mathscr{F}\}.
+\end{equation}
+\end{theorem}
+Ez a tétel azonban nem azt mondja ki, hogy a $\mathscr{F}$ szerinti feltételes valószínűség rögzített $\omega$-ra valószínűségi mértéket definiál és azt sem mondja, hogy $\mathrm{\textbf{E}}\{y | \mathscr{F}\}$ $y$ integrálja lenne ezen valószínűségi mérték szerint. Az ilyen jellegű interpretációról a következő alfejezetben lesz szó. 
+
+A tétel bizonyításához vezessük be az $y_{\delta}$ és $y_{n,\delta}$ definíciókat:
+\begin{align*}
+    y_{\delta}(\omega) &= j \delta, & \text{ahol } & j \delta < y(\omega) \le (j+1)\delta, & j=0,\pm 1, \ldots \\
+    y_{n,\delta}(\omega) &= y_{\delta}(\omega), & \text{ahol } & n \delta < y(\omega) \le (n+1)\delta, \\
+	&= 0 && \text{egyébként}.
+\end{align*}
+Ebben az esetben,
+\[
+\lim\limits_{n \to \infty } y_{n,\delta} = y_{\delta}, \quad \lim\limits_{\delta \to \infty } y_{\delta} = y,
+\]
+\[
+	|y_{n,\delta}(\omega)| \le |y_{\delta}(\omega)| \le |y(\omega)| + \delta .
+\]
+És CE$_5$ miatt $1$ valószínűséggel teljesül, hogy 
+\[
+ \lim\limits_{n \to \infty } \mathrm{\textbf{E}}\{y_{n,\delta} | \mathscr{F}\} = \mathrm{\textbf{E}}\{y_{\delta} | \mathscr{F}\}
+\]
+$1$ valószínűséggel teljesül továbbá az is, hogy 
+\[
+	\mathrm{\textbf{E}}\{y_{n,\delta} | \mathscr{F}\} = \sum_{-\infty}^{\infty} j \delta \mathrm{\textbf{P}} \{ j \delta < y(\omega) \le (j+1) \delta | \mathscr{F}\}.
+\]
+
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
