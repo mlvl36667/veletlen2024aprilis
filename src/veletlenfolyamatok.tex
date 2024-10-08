@@ -616,6 +616,38 @@ A Tétel-\ref{th:t8-4} utolsó feltételezése CE$_5$ azonnali következménye h
 
 Nagyon kézenfekvő lenne ha a valószínűség számításban minden $\omega$ halmazok $\mathscr{F}$ Borel mezejéhez lenne definiálva egy függvény, ami minden mérhető $\omega$ (M) halmazra és $\omega$ pontra értelmezett és ennek értéke $P(M,\omega)$ lenne az $M,\omega$ argumentumban úgy hogy teljesülnek a következők:
 
+CD$_1$ Minden $\omega$-ra $P(M,\omega)$ M valószínűségi mértékét definiálja és minden M-re $P(M,\omega)$ egy $\omega$ függvényt definiál ami majdnem mindenhol egy $\mathscr{F}$ mérhető függvénnyel egyenlő. 
+
+CD$_2$ Minden M-re:
+
+\[
+ P(M,\omega) = \mathrm{\textbf{P}} \{ M|\mathscr{F}\}
+\]
+
+$1$ valószínűséggel teljesül. Ezekből a feltételekből következnek a fenti CP$_1$--CP$_5$ feltételek, amiket fent ismertettünk, de ezek szigorúbbak. Ha létezik M-nek és $\omega$-nak ilyen függvénye az nem feltétlenül egyértelmű, de bármely két ilyen függvény $1$ valószínűséggel egyenlő rögzített M-re. Ha találtunk egy CD$_1$-et és CD$_2$-t kielégítő függvényt, akkor az azt jelenti, hogy az $\mathscr{F}$ által meghatározott feltételes valószínűségek megadhatók úgy hogy minden $\omega$-ra egy új valószínűségi mértéket kapunk. Ezt a valószínűségi mértéket fogjuk az $\mathscr{F}$ szerinti \textit{feltételes valószínűségi eloszlás}nak hívni és ez az $\omega$ paraméter függvénye. Bizonyos esetekben sajnos ez az eloszlás nem létezik. Most azonban tekintsünk egy olyan esetet amikor létezik az eloszlás. Először tegyük fel, hogy $\Lambda_1 \ldots \Lambda_n$ diszjunk mérhető $\omega$ halmazok a következő módon:
+\[
+	\mathrm{\textbf{P}}\{\Lambda_j\} > 0, \quad \bigcup^{n}_1 \Lambda_j = \Omega .
+\]
+Jelöljük a $\Lambda_j$-k uniójából képzett halmazok osztályát $\mathscr{F}$-el. Ebben az esetben $\mathrm{\textbf{P}} \{ M|\mathscr{F}\}$-et megadhatjuk így:
+\[
+	P\{M,\omega\} = \frac{\mathrm{\textbf{P}}\{M\Lambda_j\}}{\mathrm{\textbf{P}}\{\Lambda_j\}}, \quad \omega \in \Lambda_j, \quad j = 1, \ldots , n .
+\]
+Az így definiált $P(M,\omega)$ kielégítit CD$_1$-et és CD$_2$-t. 
+\begin{theorem}\label{th:t9-1}
+	Ha létezik $\mathscr{F}$ szerinti feltételes valószínűségi eloszlás és ha $y$ egy olyan valószínűségi változó, aminek létezik várható értéke akkor $\mathrm{\textbf{E}}\{y|\mathscr{F}\}$ egy verziója megadható $y$ ezen eloszlás szerinti integráljával (ez $\omega$ függvénye). A szokásos jelöléseket használva: 
+\begin{equation}
+	\mathrm{\textbf{E}}\{y | \mathscr{F}\} = \int_{\Omega} y(\omega') \mathrm{\textbf{P}}(d\omega',\omega).
+\end{equation}
+\end{theorem}
+Most jelöljük $\mathscr{H}$-val az olyan $y$ valószínűségi változók osztályát, amire ez a mennyiség létezik. Ebben az esetben $\mathscr{H}$-ban benne lesz az összes olyan valószínűségi változó, amely $1$ egy mérhető $\omega$ halmazon ($M$) a tér többi részén pedig eltűnik, ahogyan ez CD$_2$-ben le van írva. $\mathscr{H}$ nyilván lineáris osztály, avagy tartalmazza elemeinek minden lineáris kombinációját. $\mathscr{H}$-ban benne lesznek továbbá az összes olyan valószínűségi változók, amik csak véges sok értéket vehetnek fel. Végezetül a fent ismertetett CE$_5$-öt használva láthatjuk, hogy $\mathscr{H}$-ban benne lesz minden olyan valószínűségi változó, ami $y_1,y_2,\ldots$ $\mathscr{H}$-beli valószínűségi változókból képzett sorozat határértékeként áll elő. Ekkor teljesül az is, hogy egy $x$ valószínűségi változóra: 
+\[
+ |y_n(\omega)| \le x(\omega), \quad \mathrm{\textbf{E}}\{x\} < \infty .
+\]
+Ebben az esetben $\mathscr{H}$-ban benne lesz az össze olyan $y$ valószínűségi változó aminek létezik várható értéke és ezzel beláttuk a fenti állítást. 
+
+Most vegyünk $y_1,\ldots,y_n$ valószínűségi változókat és nevezzük el $\mathscr{F}_y = \mathscr{B} (y_1,\ldots,y_n)$-nek a legkisebb olyan $\omega$ halmazokból álló Borel mezőt, ami szerint az $y_1,\ldots,y_n$ valószínűségi változók mérhetők. Most tegyük fel hogy létezik egy $M,\omega$ függvény, amit $M \in \mathscr{F}_y$-ra és minden $\omega$-ra értelmezünk és erre igaz CD$_1$ valamint CD$_2$ $M \in \mathscr{F}_y$-ra.
+% 28.oldal
+
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
 \section{Folyamatok Kölcsönösen Korrelálatlan vagy Ortogonális Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenkorrelalatlanvagyortogonalisvaloszinusegivaltozokkal}
