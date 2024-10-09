@@ -647,6 +647,60 @@ Ebben az esetben $\mathscr{H}$-ban benne lesz az össze olyan $y$ valószínűs�
 
 Most vegyünk $y_1,\ldots,y_n$ valószínűségi változókat és nevezzük el $\mathscr{F}_y = \mathscr{B} (y_1,\ldots,y_n)$-nek a legkisebb olyan $\omega$ halmazokból álló Borel mezőt, ami szerint az $y_1,\ldots,y_n$ valószínűségi változók mérhetők. Most tegyük fel hogy létezik egy $M,\omega$ függvény, amit $M \in \mathscr{F}_y$-ra és minden $\omega$-ra értelmezünk és erre igaz CD$_1$ valamint CD$_2$ $M \in \mathscr{F}_y$-ra.
 % 28.oldal
+Ha veszünk egy $n$-dimenziós Borel halmazt (lehet 2 dimenziós ha az $y_j$-k komplexek) akkor bevezethetjük a következő definíciókat: 
+\[
+ p(Y,\omega) = P(M,\omega), \quad M = \{[y_1(\omega),\ldots,y_n(\omega)] \in Y \}.
+\]
+Ekkor $p(Y,\omega)$ Borel halmazok valószínűségi mértékét definiálja az $\omega$ paraméter függvényében. Az $\mathscr{F}_y$ halmazok valószínűségi mértékét, amelyet $P(M,\omega)$ határoz meg az $y_j$-k $\mathscr{F}$ szerinti feltételes eloszlásának nevezzük. 
+\begin{theorem}\label{th:t9-2}
+	Tegyük fel hogy létezik $y_1,\ldots,y_n$ valószínűségi változók $\mathscr{F}$ szerinti feltételes eloszlása. $\Phi$ legyen egy olyan $n$-változós Baire függvény, amire igaz hogy $\mathrm{\textbf{E}}\{|\Phi(y_1,\ldots,y_n)|\} < \infty$. Ebben az esetben $\mathrm{\textbf{E}}\{\Phi(y_1,\ldots,y_n) | \mathscr{F} \}$ egy verziója számolható úgy hogy $\Phi(y_1,\ldots,y_n)$ $\omega$ integrálját számoljuk ki az $y_j$-k $\mathscr{F}$ szerinti feltételes várható értéke szerint. 
+\end{theorem}
+
+Ahhoz hogy belássuk ezt a tételt, először jelöljük $\mathscr{H}$-val az olyan Baire függvények osztályát, amire igaz a fenti tétel. Ebben az esetben a feltételes várható érték definíciója miatt $\mathscr{H}$-ban benne lesz minden olyan függvény, amely egy $n$-dimenziós Borel halmazon (lehet 2 dimenziós ha a valószínűségi változók komplexek) 1-et vesznek fel, ezen kívül pedig 0-t. A tétel bizonyítása hasonlóan megadható, mint az előző tételé. Abban az esetben amikor $n=1$ és $Phi(x)=x$ a tétel triviális módon következik a ~\ref{th:t8-4}. tételből.
+\begin{theorem}\label{th:t9-3}
+	Ha $P_1(M,\omega)$ és $P_2(M,\omega)$ $y_1,\ldots,y_n$ valószínűségi változók $\mathscr{F}$ szerinti feltételes valószínűségeit definiálják és ha $p_i(Y,\omega)$ úgy számolható, mint ahogyan fent:
+\begin{equation}
+	p_i(Y,\omega) = P_i(M,\omega),
+\end{equation}
+akkor létezik egy $Y$-tól nem függő $\Lambda_0$ halmaz, aminek 0 a valószínűsége és teljesül hogy:
+\begin{equation}
+	p_1(Y,\omega) = p_2(Y,\omega), \quad \omega \notin \Lambda_0 .
+\end{equation}
+\end{theorem}
+Ha Y Borel halmaz akkor 1 valószínűséggel teljesül, hogy:
+\[
+	\mathrm{\textbf{P}}\{ [y_1(\omega),\ldots,y_n(\omega)) \in Y ] | \mathscr{F} \} = p_1(Y,\omega) = p_2(Y,\omega) .
+\]
+Ebben az esetben tehát létezik egy olyan $\omega$ halmaz, $\Lambda(Y)$, aminek 0 a valószínűsége és teljesül, hogy:
+\[
+ p_1(Y,\omega) = p_2(Y,\omega), \quad \omega \notin \Lambda(Y).
+\]
+Most egy intervallum $Y_1,Y_2,\ldots$ racionális felosztását vesszük. Lehet $n$-dimenziós ha az $y_j$ valószínűségi változók valósak és lehet $2n$-dimenziós ha az $y_j$ valószínűségi változók komplexek. Vezessük be továbbá a következő definíciót: $\Lambda_0 = \bigcup^{n}_1 \Lambda(Y_n)$. Ekkor:
+\[
+	p_1(Y,\omega) = p_2(Y,\omega), \quad \omega \notin \Lambda_0
+\]
+ha $Y$ valamelyik $Y_j$, avagy ha $Y$ tetszőleges intervallum. A fenti tétel tehát abból a tényből következik, hogy Borel halmazok két mértéke akkor egyezik meg ha a halmazok intervallumok.
+%29
+
+Eddig még nem esett szó arról, hogy az $y_1,\ldots,y_n$ valószínűségi változók egy Borel mező szerint feltételes várható értéke milyen feltételek mellett létezhet. Először nézzünk néhány bevezető eredményt. Ehhez jelöljük $\mathscr{F}_y$-al az $\omega$ halmazok legkisebb olyan Borel mezejét ami szerint az $y_j$-k még mérhetők. A továbbiakban $Y$-al fogjuk jelölni az $n$ dimenziós Borel halmazokt (lehet 2$n$ dimenziós is ha a valószínűségi változók komplexek). Egy $p$ függvényt $Y,\omega$ argumentumokkal az $y_j$ valószínűségi változók $\mathscr{F}$ szerinti feltételes valószínűségi eloszlásának nevezzük tág értelemben ha $p$ egy olyan $\omega$ függvényt definiál, ami majdnem mindenhol egyenlő egy $\mathscr{F}$ szerint mérhető függvénnyel ha $Y$-t lerögzítettük és egy olyan függvényt definiál, ami valószínűségi mértéke $Y$-nak ha $\omega$-t rögzítettük le és 1 valószínűséggel teljesül továbbá hogy:
+\[
+	\mathrm{\textbf{P}}\{ [y_1(\omega),\ldots,y_n(\omega)) \in Y ] | \mathscr{F} \} = p(Y,\omega) .
+\]
+Mivel a bal oldalon található feltételes valószínűségben az $\omega$ halmaz nem határozza meg $Y$-t egyértelműen a $p$ függvény minden $\omega$-ra az $\mathscr{F}_y$ halmazokra nem ad valószínűségi mértéket. Más szavakkal, $p$ létezéséből még nem következik az $\mathscr{F}$ szerinti $y_1,\ldots,y_n$ valószínűségi változók feltételes eloszlásának létezése. Abban az esetben viszont amikor $p$ létezik és ha $\Phi$ egy tetszőleges $n$ változós Baire függvény és igaz hogy $\mathrm{\textbf{E}}\{ |\Phi(y_1,\ldots,y_n)| \} < \infty$, akkor 1 valószínűséggel teljesül hogy
+\begin{equation}
+	\mathrm{\textbf{E}}\{ \Phi(y_1(\omega),\ldots,y_n(\omega))  | \mathscr{F} \} = \int^{\infty}_{-\infty} \ldots \int^{\infty}_{-\infty} \Phi(\eta_1,\ldots,\eta_n) p(d\eta,\omega) ,
+\end{equation}
+ahol a jobb oldali integrál minden $\omega$-ra egy közönséges $n$-dimenziós integrál. Ezen állítás bizonyítása hasonlóan elvégezhető, mint a~\ref{th:t9-2}-os tétel bizonyítása. A jelen eredmény némileg eltér az előzőtől, hoszen itt nem kell az $\omega$ téren integrálni. Látni fogjuk később, hogy az $y_1,\ldots,y_n$ valószínűségi változók feltételes eloszlásának létezése tág értelemben majdnem olyan hasznos, mint a feltételes eloszlás létezése. Az $y_1,\ldots,y_n$ valószínűségi változók feltételes várható értéke azonban nem egyértelműen definiált, viszont ha $p_1$ és $p_2$ is tág értelemben vett feltételes eloszlások olyan értelemben, hogy ha $\omega$ nem a 0 valószínűségi halmazban van, akkor 
+\[
+	p_1(Y,\omega) = p_2(Y,\omega),
+\]
+minden $Y$-ra. Ennek a belátása hasonló módon végezhető el, mint a~\ref{th:t9-3}-es tételé. 
+\begin{theorem}\label{th:t9-4}
+	Vegyünk $y_1,\ldots,y_n$ valószínűségi változókat. $\mathscr{F}$ legyen $\omega$ halmazok tetszőleges Borel mezeje. Ekkor létezik az $y_1,\ldots,y_n$ valószínűségi változók $p$ feltételes eloszlása tág értelemben ($\mathscr{F}$ szerint) úgy hogy $p(Y,\omega)$ rögzített $Y$-ra egy $\mathscr{F}$ szerint mérhető függvényt definiál.
+\end{theorem}
+Vegyük észre, hogy ezen tétel alapján ha $x_1,\ldots,x_n$ valószínűségi változók akkor az $x_1,\ldots,x_n$ valószínűségi változók szerint feltételes eloszlás számolható úgy mint $Y$ és $x_j$ változók függvénye, amiből egy Baire függvényt kapunk ha $Y$-t lerögzítjük.
+%30. oldal
+
 
 \section{A Véletlen Folyamatok Definíciója}\label{sec:veletlenfolyamatokdefinicioja}
 \section{Folyamatok Kölcsönösen Független Valószínűségi Változókkal}\label{sec:folyamatokkolcsonosenfuggetlenvaloszinusegivaltozokkal}
